@@ -15,7 +15,6 @@ std::vector<double> solver(const std::function<double(double, double)>& f, doubl
         solution.push_back(solution.back() + dt*gradient);
         current_t += dt;
     }
-
     return solution;
 }
 
