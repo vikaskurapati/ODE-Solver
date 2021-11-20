@@ -2,6 +2,7 @@
 #include <vector>
 #include <functional>
 #include <math.h>
+#include <cassert>
 #include "solver.h"
 
 std::vector<double> solver(const std::function<double(double, double)>& f, double int_value, double t, double dt)
@@ -21,4 +22,30 @@ std::vector<double> solver(const std::function<double(double, double)>& f, doubl
         current_t += dt;
     }
     return solution;
+}
+
+void print_solution(const std::vector<double>& x)
+{
+    for (auto elem: x)
+    {
+        std::cout << elem << " ";
+    }
+    std::cout << std::endl;
+}
+
+double error(const std::vector<double>& calc, const std::vector<double>& anal)
+{
+    int n = calc.size();
+    assert(anal.size() == n);
+    double error = 0.0;
+    for (int i=0; i < n; i++)
+    {
+        if (abs(anal[i]) < 0.00001)
+        {
+            continue;
+        }
+        error += ((calc[i]-anal[i])/anal[i])*((calc[i]-anal[i])/anal[i]);
+    }
+    error = sqrt(error/n);
+    return error;
 }
