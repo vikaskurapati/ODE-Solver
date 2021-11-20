@@ -12,7 +12,7 @@ Contributors: Vikas Kurapati <vikas.kurapati@tum.de> and Nikhita Kurupakulu Venk
  ### Instructions for use
  1. Enter the gradient function, initial value of function, total time duration and time step.
  2. The gradient is to be input as a lamba function which is a function of x, t. x is the variable being solved for and t is the independent variable.
- 3. For example, dx/dt = e^t is shown here. dx/dt = e^x would return exp(x).
+ 3. For example, $frac{dx}{dt} = e^t$ is shown here. $frac{dx}{dt} = e^x$ would return $e^x$.
 
 
 
