@@ -38,7 +38,7 @@ TEST_CASE( "Solver is tested", "[solver]" ) {
     
     SECTION("Checking relative error norms")
     {
-        REQUIRE(error(solution1, anal1) < 0.01);
-        REQUIRE(error(solution2, anal2) < 0.01);
+        REQUIRE(error(solution1, anal1) < 0.001);
+        REQUIRE(error(solution2, anal2) < 0.001);
     }
 }
