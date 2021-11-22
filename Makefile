@@ -12,5 +12,5 @@ test.o: test.cpp solver.h
 solver.o: solver.cpp
 	$(CXX) -c -o solver.o solver.cpp $(CXXFLAGS)
 clean:
-	rm main test main.o test.o solver.o
+	rm -i main test main.o test.o solver.o
 
