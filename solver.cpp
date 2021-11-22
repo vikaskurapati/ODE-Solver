@@ -35,10 +35,10 @@ void print_solution(const std::vector<double>& x)
 
 double error(const std::vector<double>& calc, const std::vector<double>& anal)
 {
-    int n = calc.size();
+    long unsigned int n = calc.size();
     assert(anal.size() == n);
     double error = 0.0;
-    for (int i=0; i < n; i++)
+    for (long unsigned int i=0; i < n; i++)
     {
         if (abs(anal[i]) < 0.00001)
         {
