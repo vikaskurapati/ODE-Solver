@@ -7,7 +7,7 @@ Contributors: Vikas Kurapati <vikas.kurapati@tum.de> and Nikhita Kurupakulu Venk
  ## Table of contents
 
  ### General Idea
- This is a solver for an Ordinary Differential Equation problem. Explicit and Implicit Euler schemes are used to solve the Ordinary Differential Equations. 
+ This is a solver for an Ordinary Differential Equation problem. Explicit Euler schemes are used to solve the Ordinary Differential Equations. 
 
  ### Instructions for use
  1. Enter the gradient function, initial value of function, total time duration and time step.
