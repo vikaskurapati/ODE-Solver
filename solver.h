@@ -6,8 +6,8 @@
 *
 * @param[in] f the function to use, int_value the initial value of the function, t the time until which the solver needs to solve, dt the timestep of the function
 */
-#ifndef FUNCTIONS_H_INCLUDED
-#define FUNCTIONS_H_INCLUDED
+#ifndef SOLVER_H
+#define SOLVER_H
 
 std::vector<double> solver(const std::function<double(double, double)>&, double, double, double);
 
