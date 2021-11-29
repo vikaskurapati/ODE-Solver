@@ -1,13 +1,6 @@
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
-#include <iostream>
-#include <functional>
-#include <cmath>
-#include <vector>
 #include "solver.h"
-#include<fstream>
-#include <cassert>
-
 
 TEST_CASE( "Solver is tested", "[solver]" ) {
     auto test1 = [](double x, double t){ return 1;};

@@ -1,8 +1,3 @@
-#include <iostream>
-#include <vector>
-#include <functional>
-#include <math.h>
-#include <cassert>
 #include "solver.h"
 
 std::vector<double> solver(const std::function<double(double, double)>& f, double int_value, double t, double dt)
