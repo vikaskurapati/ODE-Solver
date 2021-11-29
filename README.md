@@ -14,5 +14,5 @@ Contributors: Vikas Kurapati <vikas.kurapati@tum.de> and Nikhita Kurupakulu Venk
  2. The gradient is to be input as a lamba function which is a function of x, t. x is the variable being solved for and t is the independent variable.
  3. For example, $`\frac{dx}{dt} = e^t`$ is shown here. $`\frac{dx}{dt} = e^x`$ would return $`e^x`$.
  4. To run the case you choose, navigate to the build directory, run command: "cmake ../src/", then run "make" to create the executables. To run the case you chose, run "./main".
- 5. To run the test cases, run command: "./solver-testing" after running the cmake and the make commands.
+ 5. To run the test cases, run command: "./solver-test" after running the cmake and the make commands.
  6. Run the command "make clean" in case you want to delete the executables and the object files.
