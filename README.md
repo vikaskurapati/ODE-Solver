@@ -18,7 +18,8 @@ Contributors: Vikas Kurapati <vikas.kurapati@tum.de> and Nikhita Kurupakulu Venk
 cd build
 ```
  5. After navigating to the build directory, run command: 
-```cmake ../src/
+```
+cmake ../src/
 ```
  6. After the cmake is ran,  then run the below command to create the executables 
 ```
