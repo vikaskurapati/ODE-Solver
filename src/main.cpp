@@ -5,7 +5,7 @@ const double pi = 3.1415;
 
 int main()
 {
-    // the gradient is to be input as a lamba function as a function of x, t. x is the variable being solved for and t is the independent variable
+    // the gradient is to be input as a lamba function which is a function of x, t. x is the variable being solved for and t is the independent variable
     // eg. dx/dt = e^t is show here. dx/dt = e^x would return exp(x)
     auto expo = [](double x, double t){ return 1;};
     double initial_value = 1.0;
