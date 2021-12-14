@@ -19,12 +19,18 @@ std::vector<double> solver(const std::function<double(double, double)>&, double,
 void print_solution(const std::vector<double>&);
 double error(const std::vector<double>&, const std::vector<double>&);
 
-enum class SolverScheme {ExplicitEuler, Heun, RungeKutta};
+
 
 class Solver
 {
     private:
-        SolverScheme _scheme = SolverScheme::ExplicitEuler;
+        double _y_0=0.0;
+        double _dt=0.0;
+        double _t_end=0;
+        initialise_solution();
+    public:
+        Solver();
+        Solver(double y_0, double dt, double t_end);
 }
 
 #endif

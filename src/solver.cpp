@@ -44,3 +44,28 @@ double error(const std::vector<double>& calc, const std::vector<double>& anal)
     error = sqrt(error/n);
     return error;
 }
+Solver::Solver(double y_0, double dt, double t_end)
+{
+    _y_0=y_0;
+    _dt=dt;
+    _t_end=t_end;
+    Solver::initialise_solution();
+}
+
+Solver::initialise_solution()
+{
+    int n = static_cast<int> (_t_end/_dt) + 1;
+    std::vector<double> _solution(n);
+}
+
+Solver::Solver()
+{
+    std::cout<<"Enter initial value of solution"<<std::endl;
+    std::cin>>_y_0;
+    std::cout<<"Enter time step of the equation "<<std::endl;
+    std::cin>>_dt;
+    std::cout<<"Enter the final time of the equation to be used"<<std::endl;
+    std::cin>>_t_end;
+    _solution = {}
+    Solver::initialise_solution();
+}
