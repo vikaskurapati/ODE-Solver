@@ -27,10 +27,12 @@ class Solver
         double _y_0=0.0;
         double _dt=0.0;
         double _t_end=0;
-        initialise_solution();
+        std::vector<double> _solution;
+        void initialise_solution();
     public:
         Solver();
         Solver(double y_0, double dt, double t_end);
-}
+        void get_solution();
+};
 
 #endif

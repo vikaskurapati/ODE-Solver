@@ -52,10 +52,11 @@ Solver::Solver(double y_0, double dt, double t_end)
     Solver::initialise_solution();
 }
 
-Solver::initialise_solution()
+void Solver::initialise_solution()
 {
     int n = static_cast<int> (_t_end/_dt) + 1;
-    std::vector<double> _solution(n);
+    std::vector<double> temp(n, 0.0);
+    _solution = temp;
 }
 
 Solver::Solver()
@@ -66,6 +67,15 @@ Solver::Solver()
     std::cin>>_dt;
     std::cout<<"Enter the final time of the equation to be used"<<std::endl;
     std::cin>>_t_end;
-    _solution = {}
     Solver::initialise_solution();
+}
+
+void Solver::get_solution()
+{
+    int n = _solution.size();
+    for (int i=0; i < n; i++)
+    {
+        std::cout << _solution[i] << " ";
+    }
+    std::cout << std::endl;
 }
