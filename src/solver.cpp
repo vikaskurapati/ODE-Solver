@@ -44,6 +44,7 @@ double error(const std::vector<double>& calc, const std::vector<double>& anal)
     error = sqrt(error/n);
     return error;
 }
+
 Solver::Solver(double y_0, double dt, double t_end)
 {
     _y_0=y_0;
