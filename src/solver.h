@@ -31,7 +31,8 @@ class Solver
     public:
         Solver();
         Solver(double y_0, double dt, double t_end);
-        void get_solution();
+        void print_solution();
+        std::vector<double> get_solution();
         virtual void solve(const std::function<double(double, double)>&) = 0;
         virtual ~Solver() = default;
 };

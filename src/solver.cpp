@@ -71,7 +71,7 @@ Solver::Solver()
     Solver::initialise_solution();
 }
 
-void Solver::get_solution()
+void Solver::print_solution()
 {
     int n = _solution.size();
     for (int i=0; i < n; i++)
@@ -79,4 +79,9 @@ void Solver::get_solution()
         std::cout << _solution[i] << " ";
     }
     std::cout << std::endl;
+}
+
+std::vector<double> Solver::get_solution()
+{
+    return _solution;
 }

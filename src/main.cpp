@@ -20,6 +20,6 @@ int main()
     std::cin >> time_step;
     ExplicitEuler euler(initial_value, time_step, final_time);
     euler.solve(expo);
-    euler.get_solution();
+    euler.print_solution();
     return 0;
 }

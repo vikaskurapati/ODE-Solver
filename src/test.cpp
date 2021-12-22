@@ -1,13 +1,15 @@
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
-#include "solver.h"
+#include "expliciteuler.h"
 
 TEST_CASE( "Solver is tested", "[solver]" ) {
     auto test1 = [](double x, double t){ return 1;};
     auto test2 = [](double x, double t){ return exp(t);};
         
-    auto solution1 = solver(test1, 0.0, 2.0, 0.002);
-    auto solution2 = solver(test2, 0.0, 2.0, 0.002);
+    ExplicitEuler problem1(0.0, 0.002, 2.0);
+    ExplicitEuler problem2(0.0, 0.002, 2.0);
+    problem1.solve(test1);
+    problem2.solve(test2);
 
     int n = 1001;
 
@@ -19,6 +21,9 @@ TEST_CASE( "Solver is tested", "[solver]" ) {
         anal1[i] = 0.002*(i);
         anal2[i] = exp(i*0.002) - 1;
     }
+
+    auto solution1 = problem1.get_solution();
+    auto solution2 = problem2.get_solution();
 
     REQUIRE(solution1.size() == anal1.size());
     REQUIRE(solution2.size() == anal2.size());
