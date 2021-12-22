@@ -1,4 +1,4 @@
-#include "solver.h"
+#include "expliciteuler.h"
 #include<fstream>
 
 const double pi = 3.1415;
@@ -18,8 +18,8 @@ int main()
     std::cin >> final_time;
     std::cout << "Provide the timestep to be used" << std::endl;
     std::cin >> time_step;
-    // solver is defined as solver(function, initial_value, final_time, time_step)
-    solution = solver(expo, initial_value, final_time, time_step);
-    print_solution(solution);
+    ExplicitEuler euler(initial_value, time_step, final_time);
+    euler.solve(expo);
+    euler.get_solution();
     return 0;
 }
