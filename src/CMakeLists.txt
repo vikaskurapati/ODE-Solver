@@ -3,9 +3,9 @@ project(ode-solver VERSION 1.1.0 LANGUAGES CXX)
 
 enable_testing()
 
-add_executable(main main.cpp expliciteuler.cpp solver.cpp)
+add_executable(main main.cpp expliciteuler.cpp impliciteuler.cpp solver.cpp)
 
-add_executable(solver-test test.cpp expliciteuler.cpp solver.cpp)
+add_executable(solver-test test.cpp expliciteuler.cpp impliciteuler.cpp solver.cpp)
 
 add_test(NAME solver-test
 	COMMAND solver-test)
