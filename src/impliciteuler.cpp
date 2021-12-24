@@ -13,7 +13,7 @@ void ImplicitEuler::solve(const std::function<double(double, double)>& f)
         gradient = Newton(f, _solution[i-1], _dt, (i-1)*_dt);
         if (isnan(gradient) || isinf(gradient)||isnan(_solution.back())||isnan(_solution.back()))
         {
-            throw(std::invalid_argument("Gradient or Solution is not a number, please check your function analytically"));
+            throw(std::invalid_argument("Gradient or Solution is not a number or Newton is not solvable, please check your function analytically"));
         }
         _solution[i] = gradient;
     }
