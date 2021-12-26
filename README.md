@@ -37,3 +37,5 @@ make
 ```
 
  10. Run the command `make clean` in case you want to delete the executables and the object files.
+
+ 11. The Sourcetrail file `ode-solver.srctrlprj` has been added for the user to checkout the code structure if interested. Details on installing and working with Sourcetrail can be found here: <https://www.sourcetrail.com/documentation/>
