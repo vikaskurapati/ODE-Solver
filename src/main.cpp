@@ -1,6 +1,8 @@
 #include "expliciteuler.h"
 #include "impliciteuler.h"
-#include<fstream>
+
+#include <fstream>
+#include <memory>
 
 const double pi = 3.1415;
 
@@ -9,6 +11,25 @@ int main()
     // the gradient is to be input as a lamba function which is a function of x, t. x is the variable being solved for and t is the independent variable
     // eg. dx/dt = e^t is show here. dx/dt = e^x would return exp(x)
     auto expo = [](double x, double t){ return exp(t);};
+    std::string line;
+    std::ifstream myfile("main.cpp");
+    std::ofstream out("solution.txt");
+    auto *coutbuf = std::cout.rdbuf();
+    std::cout.rdbuf(out.rdbuf());
+    if (myfile.is_open())
+    {
+        while(getline(myfile, line))
+        {
+            if(line[4] == 'a')
+            {
+                std::cout << "The Gradient function used for this problem is" <<std::endl;
+                std::cout << line << std::endl;
+            }
+        }
+        myfile.close();
+    }
+
+    std::cout.rdbuf(coutbuf);
     double initial_value = 1.0;
     double final_time = 2.0;
     double time_step = 0.1;
@@ -22,17 +43,29 @@ int main()
     std::cin >> time_step;
     std::cout << "Choose the Solver" << std::endl << "1. ExplicitEuler" << std::endl << "2. ImplicitEuler" << std::endl;
     std::cin >> choice;
+    std::string solvermethod;
+
+    std::unique_ptr<Solver> euler;
+
     if(choice == 1)
     {
-        ExplicitEuler euler(initial_value, time_step, final_time);
-        euler.solve(expo);
-        euler.print_solution();
+        euler = std::make_unique<ExplicitEuler>(initial_value, time_step, final_time);
+        //ExplicitEuler euler(initial_value, time_step, final_time);
+        solvermethod = "Explicit Euler";
     }
     else
     {
-        ImplicitEuler euler(initial_value, time_step, final_time);
-        euler.solve(expo);
-        euler.print_solution();
+        euler = std::make_unique<ImplicitEuler>(initial_value, time_step, final_time);
+//        ImplicitEuler euler(initial_value, time_step, final_time);
+        solvermethod = "Explicit Euler";
     }
+
+    std::cout.rdbuf(out.rdbuf());
+    euler->solve(expo);
+    std::cout << "The Solver used for this problem is:" << std::endl;
+    std::cout << "    " << solvermethod << std::endl;
+    std::cout << "The solution obtained y(t) is:" << std::endl;
+    euler->print_solution(); 
+    std::cout.rdbuf(coutbuf);
     return 0;
 }
