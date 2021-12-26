@@ -1,8 +1,24 @@
 #include "impliciteuler.h"
 
+/**
+* Implicit Euler Constructor
+*
+* Constructs a solver instance based on the inputs and initializes the solution vector
+*
+* @param y_0, the initial value of the ODE problem, 
+* @param t_end the time until which the solver needs to solve, 
+* @param dt the timestep of the function
+*/
 ImplicitEuler::ImplicitEuler(double y_0, double dt, double t_end):Solver(y_0,dt,t_end)
 {}
 
+/**
+* Implicit Euler Solve function
+*
+* Solves the ODE and modifies the solution vector
+*
+* @param f, defining the gradient of the problem, 
+*/
 void ImplicitEuler::solve(const std::function<double(double, double)>& f)
 {
     double gradient = 0.0;
@@ -19,6 +35,16 @@ void ImplicitEuler::solve(const std::function<double(double, double)>& f)
     }
 }
 
+/**
+* Helper Newton function to solve the implicit non-linear equation using Newton Raphson's Method
+*
+* Solves the non-linear equation and returns the solution
+*
+* @param f, defining the gradient of the problem, 
+* @param yn value of the solution at nth time-step,
+* @param dt time-step,
+* @param t  time until which the solver already progressed
+*/
 double ImplicitEuler::Newton(const std::function<double(double, double)>& f, double yn, double dt, double t)
 {
     int iter = 0;

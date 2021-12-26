@@ -8,9 +8,13 @@ const double pi = 3.1415;
 
 int main()
 {
-    // the gradient is to be input as a lamba function which is a function of x, t. x is the variable being solved for and t is the independent variable
-    // eg. dx/dt = e^t is show here. dx/dt = e^x would return exp(x)
-    auto expo = [](double x, double t){ return exp(t);};
+    /**
+    * the gradient is to be input as a lamba function which is a function of x, t. x is the variable being solved for and t is the independent variable
+    * eg. dy/dt = e^t is show here. dy/dt = e^y would return exp(y)/
+    * @param auto The gradient function as a function of y and t
+    */
+
+    auto expo = [](double y, double t){ return exp(t);};
     std::string line;
     std::ifstream myfile("../src/main.cpp");
     std::ofstream out("solution.txt");

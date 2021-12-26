@@ -4,7 +4,9 @@
 * Compute the solution of an ODE on the basis of the given gradient function using
 * any chosen Euler Scheme
 *
-* @param[in] f the function to use, int_value the initial value of the function, t the time until which the solver needs to solve, dt the timestep of the function
+* @param f the function to use, int_value the initial value of the function, 
+* @param t the time until which the solver needs to solve, 
+* @param dt the timestep of the function
 */
 
 #ifndef EXPLICITEULER_H

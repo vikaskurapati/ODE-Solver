@@ -1,5 +1,13 @@
 #include "solver.h"
 
+/**
+* Function to calculate the error between two vectors
+*
+* 
+* @param calc The Caculated Vector whose error is to be calculated
+* @param anal-The analytical solution which is used as a reference to calculate the error
+*/
+
 double error(const std::vector<double>& calc, const std::vector<double>& anal)
 {
     long unsigned int n = calc.size();
@@ -17,6 +25,14 @@ double error(const std::vector<double>& calc, const std::vector<double>& anal)
     return error;
 }
 
+/**
+* Solver Constructor
+*
+* @param y_0- initial value of the problem
+* @param dt time-step of the problem
+* @param t_end time until which the ode should solve the problem
+*/
+
 Solver::Solver(double y_0, double dt, double t_end)
 {
     _y_0=y_0;
@@ -25,6 +41,10 @@ Solver::Solver(double y_0, double dt, double t_end)
     Solver::initialise_solution();
 }
 
+/**
+* Helper function to initialise the solution to vector
+*/
+
 void Solver::initialise_solution()
 {
     int n = static_cast<int> (_t_end/_dt) + 1;
@@ -32,6 +52,10 @@ void Solver::initialise_solution()
     _solution = temp;
 }
 
+/**
+* Solver Default Constructor which is run if no parameters are given
+* Asks the user to input the parameters as there are no parameters
+*/
 Solver::Solver()
 {
     std::cout<<"Enter initial value of solution"<<std::endl;
@@ -43,6 +67,10 @@ Solver::Solver()
     Solver::initialise_solution();
 }
 
+/**
+* Helper function to print the solution
+*/
+
 void Solver::print_solution()
 {
     int n = _solution.size();
@@ -52,6 +80,10 @@ void Solver::print_solution()
     }
     std::cout << std::endl;
 }
+
+/**
+* Helper function which returns the solution
+*/
 
 std::vector<double> Solver::get_solution()
 {
