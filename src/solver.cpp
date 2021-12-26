@@ -48,7 +48,7 @@ void Solver::print_solution()
     int n = _solution.size();
     for (int i=0; i < n; i++)
     {
-        std::cout << _solution[i] << " ";
+        std::cout <<"( "<<_dt*i<< " , "<<_solution[i] <<" )" << std::endl;
     }
     std::cout << std::endl;
 }
