@@ -11,7 +11,6 @@
 #include <vector>
 #include <iostream>
 #include <functional>
-#include <math.h>
 #include <cassert>
 
 std::vector<double> solver(const std::function<double(double, double)>&, double, double, double);
