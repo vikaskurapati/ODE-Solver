@@ -21,6 +21,7 @@ std::vector<double> solver(const std::function<double(double, double)>& f, doubl
 
 void print_solution(const std::vector<double>& x)
 {
+    std::cout << "The Solution of the given problem for the given dt is:" << std::endl;
     for (auto elem: x)
     {
         std::cout << elem << " ";
