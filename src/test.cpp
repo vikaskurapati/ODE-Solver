@@ -25,10 +25,11 @@ TEST_CASE( "Explicit Euler is tested", "[ExplicitEuler]" ) {
 
     auto solution1 = problem1.get_solution();
     auto solution2 = problem2.get_solution();
-
-    REQUIRE(solution1.size() == anal1.size());
-    REQUIRE(solution2.size() == anal2.size());
-
+    SECTION("Checking the sizes of the matrices to be same")
+    {   
+        REQUIRE(solution1.size() == anal1.size());
+        REQUIRE(solution2.size() == anal2.size());
+    }
     SECTION("Checking the last values for sanity")
     {
         REQUIRE( solution1.back()-2.0 < 0.001 );
@@ -64,10 +65,11 @@ TEST_CASE( "Implicit Euler is tested", "[ImplicitEuler]" ) {
 
     auto solution1 = problem1.get_solution();
     auto solution2 = problem2.get_solution();
-
-    REQUIRE(solution1.size() == anal1.size());
-    REQUIRE(solution2.size() == anal2.size());
-
+    SECTION("Checking the sizes of the matrices to be same")
+    {   
+        REQUIRE(solution1.size() == anal1.size());
+        REQUIRE(solution2.size() == anal2.size());
+    }
     SECTION("Checking the last values for sanity")
     {
         REQUIRE( solution1.back()-2.0 < 0.001 );
