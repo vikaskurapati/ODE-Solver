@@ -15,6 +15,8 @@ Contributors: Vikas Kurapati <vikas.kurapati@tum.de> and Nikhita Kurupakulu Venk
  3. For example, $`\frac{dx}{dt} = e^t`$ is shown here. $`\frac{dx}{dt} = e^x`$ would return $`e^x`$.
  4. To run the case you choose, navigate to the build directory by typing
 ```
+mkdir ../build
+
 cd ../build
 ```
  5. After navigating to the build directory, run command: 
