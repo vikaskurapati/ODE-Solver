@@ -14,9 +14,6 @@
 #include <math.h>
 #include <cassert>
 
-std::vector<double> solver(const std::function<double(double, double)>&, double, double, double);
-
-void print_solution(const std::vector<double>&);
 double error(const std::vector<double>&, const std::vector<double>&);
 
 enum SolverScheme{ EulerExplicit, EulerImplicit};
@@ -35,7 +32,7 @@ class Solver
         Solver(double y_0, double dt, double t_end);
         void print_solution();
         std::vector<double> get_solution();
-        virtual void solve(const std::function<double(double, double)>&) = 0;
+        virtual void solve(const std::function<double(double, double)>& f) = 0;
         virtual ~Solver() = default;
 };
 

@@ -17,10 +17,10 @@
 class ImplicitEuler : public Solver
 {
     private:
-        double Newton(const std::function<double(double, double)>&, double, double, double);
+        double Newton(const std::function<double(double, double)>& f, double yn, double dt, double t);
     
     public:
-        void solve(const std::function<double(double, double)>&) override;
+        void solve(const std::function<double(double, double)>& f) override;
 
         ImplicitEuler(double y_0, double dt, double t_end);
 };

@@ -17,7 +17,7 @@
 class ExplicitEuler : public Solver
 {
     public:
-        void solve(const std::function<double(double, double)>&) override;
+        void solve(const std::function<double(double, double)>& f)  override;
 
         ExplicitEuler(double y_0, double dt, double t_end);
 };
