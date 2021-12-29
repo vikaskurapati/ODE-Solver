@@ -1,4 +1,5 @@
 #include "solver.h"
+#include <cmath>
 
 std::vector<double> solver(const std::function<double(double, double)>& f, double int_value, double t, double dt)
 {
@@ -8,7 +9,7 @@ std::vector<double> solver(const std::function<double(double, double)>& f, doubl
     double current_t = 0;
     while(current_t < t)
     {
-        if (isnan(gradient) || isinf(gradient)||isnan(solution.back())||isnan(solution.back()))
+        if (std::isnan(gradient) || std::isinf(gradient)||std::isnan(solution.back())||std::isnan(solution.back()))
         {
             throw(std::invalid_argument("Gradient or Solution is not a number, please check your function analytically"));
         }

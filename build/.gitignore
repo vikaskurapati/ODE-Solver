@@ -1,8 +1,0 @@
-#Ignore everything in this directory
-*
-*.o
-*.out
-
-#Except this file
-!.gitignore
-
