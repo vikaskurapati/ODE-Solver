@@ -14,7 +14,7 @@ int main()
     * @param auto The gradient function as a function of y and t
     */
 
-    auto expo = [](double y, double t){ return exp(t);};
+    auto gradient_function = [](double y, double t){ return exp(t);};
     std::string line;
     std::ifstream myfile("../src/main.cpp");
     std::ofstream out("solution.txt");
@@ -25,7 +25,7 @@ int main()
     {
         while(getline(myfile, line))
         {
-            if(line_counter == 13)
+            if(line_counter == 17)
             {
                 std::cout << "The Gradient function used for this problem is" <<std::endl;
                 std::cout << line << std::endl;
@@ -63,11 +63,11 @@ int main()
     {
         euler = std::make_unique<ImplicitEuler>(initial_value, time_step, final_time);
 //        ImplicitEuler euler(initial_value, time_step, final_time);
-        solvermethod = "Explicit Euler";
+        solvermethod = "Implicit Euler";
     }
 
     std::cout.rdbuf(out.rdbuf());
-    euler->solve(expo);
+    euler->solve(gradient_function);
     std::cout << "The Solver used for this problem is:" << std::endl;
     std::cout << "    " << solvermethod << std::endl;
     std::cout << "The solution obtained y(t) is:" << std::endl;
