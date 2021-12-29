@@ -19,6 +19,7 @@ int main()
     std::cout << "Provide the timestep to be used" << std::endl;
     std::cin >> time_step;
     // solver is defined as solver(function, initial_value, final_time, time_step)
+    std::cout << "Expected value at the last time step if you haven't changed the gradient function from the constant function would be: " << initial_value + final_time << std::endl;
     solution = solver(gradient_function, initial_value, final_time, time_step);
     print_solution(solution);
     return 0;
