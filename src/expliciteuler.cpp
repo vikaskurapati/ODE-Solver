@@ -30,7 +30,7 @@ void ExplicitEuler::solve(const std::function<double(double, double)>& f)
     {
         if (isnan(gradient) || isinf(gradient)||isnan(_solution.back())||isnan(_solution.back()))
         {
-            throw(std::invalid_argument("Gradient or Solution is not a number, please check your function analytically"));
+            throw(std::runtime_error("Gradient or Solution is not a number, please check your function analytically"));
         }
         gradient = f(_solution[i-1], _dt*(i-1));
         _solution[i] = _solution[i-1] + _dt*gradient;

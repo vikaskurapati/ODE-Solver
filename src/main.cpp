@@ -71,7 +71,7 @@ int main()
     {
         euler->solve(gradient_function);
     }
-    catch(const std::invalid_argument& error)
+    catch(const std::runtime_error& error)
     {
         std::cerr << "Error: " << error.what() << "\n";
     }

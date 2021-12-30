@@ -21,25 +21,25 @@ ImplicitEuler::ImplicitEuler(double y_0, double dt, double t_end):Solver(y_0,dt,
 */
 void ImplicitEuler::solve(const std::function<double(double, double)>& f)
 {
-    double gradient = 0.0;
+    double ythis = 0.0;
     _solution[0] = _y_0;
     size_t n = _solution.size();
     for(int i=1; i<n; i++)
     {
         try
         {
-            gradient = Newton(f, _solution[i-1], _dt, (i-1)*_dt);
+            ythis = Newton(f, _solution[i-1], _dt, (i-1)*_dt);
         }
-        catch(const std::invalid_argument& error)
+        catch(const std::runtime_error& error)
         {
             std::cerr << "Warning" << error.what() << "\n";
-            throw(std::invalid_argument("Newton is not solvable"));
+            throw(std::runtime_error("Newton is not solvable"));
         }
-        if (isnan(gradient) || isinf(gradient)||isnan(_solution.back())||isnan(_solution.back()))
+        if (isnan(ythis) || isinf(ythis)||isnan(_solution.back())||isnan(_solution.back()))
         {
-            throw(std::invalid_argument("Gradient or Solution is not a number, please check your function analytically"));
+            throw(std::runtime_error("Solution is not a number, please check your function analytically"));
         }
-        _solution[i] = gradient;
+        _solution[i] = ythis;
     }
 }
 
@@ -65,7 +65,7 @@ double ImplicitEuler::Newton(const std::function<double(double, double)>& f, dou
     {
         if(dG(ycurr, t, dt, f) == 0)
         {
-            throw(std::invalid_argument("Newton Solver doesn't work, check your implicit solution"));
+            throw(std::runtime_error("Newton Solver doesn't work, check your implicit solution"));
         }
         ynext = ycurr - G(ycurr, t, yn, dt, f)/dG(ycurr, t, dt, f);
         tol = abs(ynext - ycurr);
