@@ -20,7 +20,14 @@ int main()
     std::cin >> time_step;
     // solver is defined as solver(function, initial_value, final_time, time_step)
     std::cout << "Expected value at the last time step if you haven't changed the gradient function from the constant function would be: " << initial_value + final_time << std::endl;
-    solution = solver(gradient_function, initial_value, final_time, time_step);
+    try
+    {
+       solution = solver(gradient_function, initial_value, final_time, time_step);
+    }
+    catch(const std::invalid_argument& e)
+    {
+        std::cerr << "Error:" << e.what() << '\n';
+    }
     print_solution(solution);
     return 0;
 }
