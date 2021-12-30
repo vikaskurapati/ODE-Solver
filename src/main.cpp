@@ -14,7 +14,7 @@ int main()
     * @param auto The gradient function as a function of y and t
     */
 
-    auto gradient_function = [](double y, double t){ return exp(t);};
+    auto gradient_function = [](double y, double t){ return -y;};
     std::string line;
     std::ifstream myfile("../src/main.cpp");
     std::ofstream out("solution.txt");
@@ -67,7 +67,14 @@ int main()
     }
 
     std::cout.rdbuf(out.rdbuf());
-    euler->solve(gradient_function);
+    try
+    {
+        euler->solve(gradient_function);
+    }
+    catch(const std::invalid_argument& error)
+    {
+        std::cerr << "Error: " << error.what() << "\n";
+    }
     std::cout << "The Solver used for this problem is:" << std::endl;
     std::cout << "    " << solvermethod << std::endl;
     std::cout << "The solution obtained y(t) is:" << std::endl;
