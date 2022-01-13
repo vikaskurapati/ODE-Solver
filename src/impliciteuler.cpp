@@ -1,4 +1,5 @@
 #include "impliciteuler.h"
+#include <cmath>
 
 /**
 * Implicit Euler Constructor
@@ -35,7 +36,7 @@ void ImplicitEuler::solve(const std::function<double(double, double)>& f)
             std::cerr << "Warning" << error.what() << "\n";
             throw(std::runtime_error("Newton is not solvable"));
         }
-        if (isnan(ythis) || isinf(ythis)||isnan(_solution.back())||isnan(_solution.back()))
+        if (std::isnan(ythis) || std::isinf(ythis)||std::isnan(_solution.back())||std::isnan(_solution.back()))
         {
             throw(std::runtime_error("Solution is not a number, please check your function analytically"));
         }

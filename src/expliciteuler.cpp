@@ -1,4 +1,5 @@
 #include "expliciteuler.h"
+#include <cmath>
 
 /**
 * Explicit Euler Constructor
@@ -28,7 +29,7 @@ void ExplicitEuler::solve(const std::function<double(double, double)>& f)
     size_t n = _solution.size();
     for(int i=1; i<n; i++)
     {
-        if (isnan(gradient) || isinf(gradient)||isnan(_solution.back())||isnan(_solution.back()))
+        if (std::isnan(gradient) || std::isinf(gradient)||std::isnan(_solution.back())||std::isnan(_solution.back()))
         {
             throw(std::runtime_error("Gradient or Solution is not a number, please check your function analytically"));
         }
