@@ -11,7 +11,6 @@
 #include <vector>
 #include <iostream>
 #include <functional>
-#include <math.h>
 #include <cassert>
 
 double error(const std::vector<double>&, const std::vector<double>&);

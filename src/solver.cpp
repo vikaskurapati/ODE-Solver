@@ -1,4 +1,5 @@
 #include "solver.h"
+#include <cmath>
 
 /**
 * Function to calculate the error between two vectors
@@ -11,7 +12,7 @@
 double error(const std::vector<double>& calc, const std::vector<double>& anal)
 {
     long unsigned int n = calc.size();
-    assert(anal.size() == n);
+    assert((anal.size() == n)&& "The size of the solution vector must be equal to the analytical solution vector");
     double error = 0.0;
     for (long unsigned int i=0; i < n; i++)
     {

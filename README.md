@@ -19,6 +19,8 @@ Contributors: Vikas Kurapati <vikas.kurapati@tum.de> and Nikhita Kurupakulu Venk
  ```
  5. To run the case you choose, navigate to the build directory by typing
 ```
+mkdir ../build
+
 cd ../build
 ```
  6. After navigating to the build directory, run the below command to make the build files(this need not be run again once the build files are made unless the code structure is changed): 
