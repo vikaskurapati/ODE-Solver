@@ -74,6 +74,7 @@ int main()
     catch(const std::runtime_error& error)
     {
         std::cerr << "Error: " << error.what() << "\n";
+        return 1;
     }
     std::cout << "The Solver used for this problem is:" << std::endl;
     std::cout << "    " << solvermethod << std::endl;
