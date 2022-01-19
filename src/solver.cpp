@@ -11,10 +11,10 @@
 
 double error(const std::vector<double>& calc, const std::vector<double>& anal)
 {
-    long unsigned int n = calc.size();
+    size_t n = calc.size();
     assert((anal.size() == n)&& "The size of the solution vector must be equal to the analytical solution vector");
     double error = 0.0;
-    for (long unsigned int i=0; i < n; i++)
+    for (size_t i=0; i < n; i++)
     {
         if (abs(anal[i]) < 0.00001)
         {
@@ -59,11 +59,11 @@ void Solver::initialise_solution()
 */
 Solver::Solver()
 {
-    std::cout<<"Enter initial value of solution"<<std::endl;
+    std::cout<<"Enter initial value of solution \n";
     std::cin>>_y_0;
-    std::cout<<"Enter time step of the equation "<<std::endl;
+    std::cout<<"Enter time step of the equation \n";
     std::cin>>_dt;
-    std::cout<<"Enter the final time of the equation to be used"<<std::endl;
+    std::cout<<"Enter the final time of the equation to be used \n";
     std::cin>>_t_end;
     Solver::initialise_solution();
 }
@@ -75,11 +75,11 @@ Solver::Solver()
 void Solver::print_solution()
 {
     int n = _solution.size();
-    for (int i=0; i < n; i++)
+    for (size_t i=0; i < n; i++)
     {
-        std::cout <<"( "<<_dt*i<< " , "<<_solution[i] <<" )" << std::endl;
+        std::cout <<"( "<<_dt*i<< " , "<<_solution[i] <<" ) \n";
     }
-    std::cout << std::endl;
+    std::cout << "\n";
 }
 
 /**

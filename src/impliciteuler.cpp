@@ -25,7 +25,7 @@ void ImplicitEuler::solve(const std::function<double(double, double)>& f)
     double ythis = 0.0;
     _solution[0] = _y_0;
     size_t n = _solution.size();
-    for(int i=1; i<n; i++)
+    for(size_t i=1; i<n; i++)
     {
         try
         {

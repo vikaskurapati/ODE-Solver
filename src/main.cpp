@@ -27,7 +27,7 @@ int main()
         {
             if(line_counter == 17)
             {
-                std::cout << "The Gradient function used for this problem is" <<std::endl;
+                std::cout << "The Gradient function used for this problem is \n";
                 std::cout << line << std::endl;
             }
             line_counter += 1;
@@ -41,13 +41,13 @@ int main()
     double time_step = 0.1;
     size_t choice = 1;
     std::vector<double> solution;
-    std::cout << "Provide the initial value of the solution" << std::endl;
+    std::cout << "Provide the initial value of the solution \n";
     std::cin >> initial_value;
-    std::cout << "Provide the final time until which the solution should be run" << std::endl;
+    std::cout << "Provide the final time until which the solution should be run \n";
     std::cin >> final_time;
-    std::cout << "Provide the timestep to be used" << std::endl;
+    std::cout << "Provide the timestep to be used \n";
     std::cin >> time_step;
-    std::cout << "Choose the Solver" << std::endl << "1. ExplicitEuler" << std::endl << "2. ImplicitEuler" << std::endl;
+    std::cout << "Choose the Solver \n 1. ExplicitEuler \n 2. ImplicitEuler \n";
     std::cin >> choice;
     std::string solvermethod;
 
@@ -76,10 +76,10 @@ int main()
         std::cerr << "Error: " << error.what() << "\n";
         return 1;
     }
-    std::cout << "The Solver used for this problem is:" << std::endl;
+    std::cout << "The Solver used for this problem is: \n";
     std::cout << "    " << solvermethod << std::endl;
-    std::cout << "The solution obtained y(t) is:" << std::endl;
-    std::cout << "( t,  y(t) )" << std::endl;
+    std::cout << "The solution obtained y(t) is: \n";
+    std::cout << "( t,  y(t) ) \n";
     euler->print_solution(); 
     std::cout.rdbuf(coutbuf);
     return 0;

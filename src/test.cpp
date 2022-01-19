@@ -17,7 +17,7 @@ TEST_CASE( "Explicit Euler is tested", "[ExplicitEuler]" ) {
     std::vector<double> anal1(n, 0.0);
     std::vector<double> anal2(n, 0.0);
 
-    for (int i=0; i < n; i++)
+    for (size_t i=0; i < n; i++)
     {
         anal1[i] = 0.002*(i);
         anal2[i] = exp(i*0.002) - 1;
@@ -57,7 +57,7 @@ TEST_CASE( "Implicit Euler is tested", "[ImplicitEuler]" ) {
     std::vector<double> anal1(n, 0.0);
     std::vector<double> anal2(n, 0.0);
 
-    for (int i=0; i < n; i++)
+    for (size_t i=0; i < n; i++)
     {
         anal1[i] = 0.002*(i);
         anal2[i] = exp(i*0.002) - 1;
