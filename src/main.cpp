@@ -3,6 +3,7 @@
 
 #include <fstream>
 #include <memory>
+#include <cmath>
 
 const double pi = 3.1415;
 
@@ -14,7 +15,7 @@ int main()
     * @param auto The gradient function as a function of y and t
     */
 
-    auto gradient_function = [](double y, double t){ return -y;};
+    auto gradient_function = [](double y, double t){ return exp(y);};
     std::string line;
     std::ifstream myfile("../src/main.cpp");
     std::ofstream out("solution.txt");
@@ -25,7 +26,7 @@ int main()
     {
         while(getline(myfile, line))
         {
-            if(line_counter == 17)
+            if(line_counter == 18)
             {
                 std::cout << "The Gradient function used for this problem is \n";
                 std::cout << line << std::endl;
