@@ -15,7 +15,7 @@ int main()
     * @param auto The gradient function as a function of y and t
     */
 
-    auto gradient_function = [](double y, double t){ return exp(y);};
+    auto gradient_function = [](double y, double t){ return -y;};
     std::string line;
     std::ifstream myfile("../src/main.cpp");
     std::ofstream out("solution.txt");
