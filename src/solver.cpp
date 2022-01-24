@@ -1,41 +1,20 @@
 #include "solver.h"
 #include <cmath>
 
-std::vector<double> solver(const std::function<double(double, double)>& f, double int_value, double t, double dt)
-{
-    std::vector<double> solution;
-    double gradient = 0.0;
-    solution.push_back(int_value);
-    double current_t = 0;
-    while(current_t < t)
-    {
-        if (std::isnan(gradient) || std::isinf(gradient)||std::isnan(solution.back())||std::isnan(solution.back()))
-        {
-            throw(std::invalid_argument("Gradient or Solution is not a number, please check your function analytically"));
-        }
-        gradient = f(solution.back(),current_t);
-        solution.push_back(solution.back() + dt*gradient);
-        current_t += dt;
-    }
-    return solution;
-}
-
-void print_solution(const std::vector<double>& x)
-{
-    std::cout << "The Solution of the given problem for the given dt is:" << std::endl;
-    for (auto elem: x)
-    {
-        std::cout << elem << " ";
-    }
-    std::cout << std::endl;
-}
+/**
+* Function to calculate the error between two vectors
+*
+* 
+* @param calc The Caculated Vector whose error is to be calculated
+* @param anal-The analytical solution which is used as a reference to calculate the error
+*/
 
 double error(const std::vector<double>& calc, const std::vector<double>& anal)
 {
-    long unsigned int n = calc.size();
+    size_t n = calc.size();
     assert((anal.size() == n)&& "The size of the solution vector must be equal to the analytical solution vector");
     double error = 0.0;
-    for (long unsigned int i=0; i < n; i++)
+    for (size_t i=0; i < n; i++)
     {
         if (abs(anal[i]) < 0.00001)
         {
@@ -45,4 +24,69 @@ double error(const std::vector<double>& calc, const std::vector<double>& anal)
     }
     error = sqrt(error/n);
     return error;
+}
+
+/**
+* Solver Constructor
+*
+* @param y_0- initial value of the problem
+* @param dt time-step of the problem
+* @param t_end time until which the ode should solve the problem
+*/
+
+Solver::Solver(double y_0, double dt, double t_end)
+{
+    _y_0=y_0;
+    _dt=dt;
+    _t_end=t_end;
+    Solver::initialise_solution();
+}
+
+/**
+* Helper function to initialise the solution to vector
+*/
+
+void Solver::initialise_solution()
+{
+    int n = static_cast<int> (_t_end/_dt) + 1;
+    std::vector<double> temp(n, 0.0);
+    _solution = temp;
+}
+
+/**
+* Solver Default Constructor which is run if no parameters are given
+* Asks the user to input the parameters as there are no parameters
+*/
+Solver::Solver()
+{
+    std::cout<<"Enter initial value of solution \n";
+    std::cin>>_y_0;
+    std::cout<<"Enter time step of the equation \n";
+    std::cin>>_dt;
+    std::cout<<"Enter the final time of the equation to be used \n";
+    std::cin>>_t_end;
+    Solver::initialise_solution();
+}
+
+/**
+* Helper function to print the solution
+*/
+
+void Solver::print_solution()
+{
+    int n = _solution.size();
+    for (size_t i=0; i < n; i++)
+    {
+        std::cout <<"( "<<_dt*i<< " , "<<_solution[i] <<" ) \n";
+    }
+    std::cout << "\n";
+}
+
+/**
+* Helper function which returns the solution
+*/
+
+std::vector<double> Solver::get_solution()
+{
+    return _solution;
 }
