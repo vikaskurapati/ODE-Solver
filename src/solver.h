@@ -13,7 +13,7 @@
 #include <functional>
 #include <cassert>
 
-double error(const std::vector<double>&, const std::vector<double>&);
+double error_squared(const std::vector<double>&, const std::vector<double>&);
 
 enum SolverScheme{ EulerExplicit, EulerImplicit};
 

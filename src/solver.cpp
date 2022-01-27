@@ -9,21 +9,20 @@
 * @param anal-The analytical solution which is used as a reference to calculate the error
 */
 
-double error(const std::vector<double>& calc, const std::vector<double>& anal)
+double error_squared(const std::vector<double>& calc, const std::vector<double>& anal)
 {
     size_t n = calc.size();
     assert((anal.size() == n)&& "The size of the solution vector must be equal to the analytical solution vector");
     double error = 0.0;
     for (size_t i=0; i < n; i++)
     {
-        if (abs(anal[i]) < 0.00001)
+        if (abs(anal[i]) < 1e-5)
         {
             continue;
         }
         error += ((calc[i]-anal[i])/anal[i])*((calc[i]-anal[i])/anal[i]);
     }
-    error = sqrt(error/n);
-    return error;
+    return error/n;
 }
 
 /**
