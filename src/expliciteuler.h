@@ -18,8 +18,16 @@ class ExplicitEuler : public Solver
 {
     public:
         void solve(const std::function<double(double, double)>& f)  override;
-
-        ExplicitEuler(double y_0, double dt, double t_end);
+        /**
+        * Explicit Euler Constructor
+        *
+        * Constructs a solver instance based on the inputs and initializes the solution vector
+        *
+        * @param y_0, the initial value of the ODE problem, 
+        * @param t_end the time until which the solver needs to solve, 
+        * @param dt the timestep of the function
+        */
+        ExplicitEuler(double y_0, double dt, double t_end):Solver(y_0,dt,t_end){};
 };
 
 #endif

@@ -82,12 +82,3 @@ void Solver::print_solution()
     }
     std::cout << "\n";
 }
-
-/**
-* Helper function which returns the solution
-*/
-
-std::vector<double> Solver::get_solution()
-{
-    return _solution;
-}
