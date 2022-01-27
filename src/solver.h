@@ -12,6 +12,7 @@
 #include <iostream>
 #include <functional>
 #include <cassert>
+//#include <array>
 
 double error_squared(const std::vector<double>&, const std::vector<double>&);
 
@@ -22,6 +23,7 @@ class Solver
     private:
         void initialise_solution();
     protected:
+        //std::array _solution;
         std::vector<double> _solution;
         double _y_0=0.0;
         double _dt=0.0;

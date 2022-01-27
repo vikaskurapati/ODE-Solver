@@ -48,7 +48,9 @@ Solver::Solver(double y_0, double dt, double t_end)
 void Solver::initialise_solution()
 {
     int n = static_cast<int> (_t_end/_dt) + 1;
+    //std::array<double, n> temp;
     std::vector<double> temp(n, 0.0);
+    //temp.fill(0.0);
     _solution = temp;
 }
 
