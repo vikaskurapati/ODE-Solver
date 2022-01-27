@@ -61,7 +61,7 @@ double ImplicitEuler::Newton(const std::function<double(double, double)>& f, dou
     double ynext = 0.0;
     double ycurr = yn;
     auto G = [](double x, double t, double yn, double dt, const std::function<double(double, double)>& f){ return x - yn - dt*f(x,t);};
-    auto dG = [](double x, double t, double dt, const std::function<double(double, double)>& f){ return 1 - (1/0.01)*dt*(f(x + 0.01,t)- f(x,t));};
+    auto dG = [](double x, double t, double dt, const std::function<double(double, double)>& f){ return 1 - (100.0)*dt*(f(x + 0.01,t)- f(x,t));}; //Replaced 1/0.01 with 100.0 for faster performance
     while (tol > 1e-3 && iter < 100)
     {
         if(dG(ycurr, t, dt, f) == 0)
