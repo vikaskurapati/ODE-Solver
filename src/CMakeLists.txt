@@ -10,3 +10,5 @@ add_executable(solver-test test.cpp expliciteuler.cpp impliciteuler.cpp solver.c
 
 add_test(NAME solver-test
 	COMMAND solver-test)
+
+set (CMAKE_CXX_FLAGS "-O3")	

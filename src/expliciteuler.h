@@ -27,7 +27,7 @@ class ExplicitEuler : public Solver
         * @param t_end the time until which the solver needs to solve, 
         * @param dt the timestep of the function
         */
-        ExplicitEuler(double y_0, double dt, double t_end):Solver(y_0,dt,t_end){};
+        inline ExplicitEuler(double y_0, double dt, double t_end):Solver(y_0,dt,t_end){};
 };
 
 #endif

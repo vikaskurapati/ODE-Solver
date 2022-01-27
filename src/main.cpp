@@ -27,7 +27,7 @@ int main()
     {
         while(getline(myfile, line))
         {
-            if(line_counter == 18)
+            if(line_counter == 19)
             {
                 std::cout << "The Gradient function used for this problem is \n";
                 std::cout << line << std::endl;
