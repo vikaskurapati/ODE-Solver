@@ -1,0 +1,1071 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00      400     0.00     0.00  double&& std::forward<double>(std::remove_reference<double>::type&)
+  0.00      0.00     0.00      100     0.00     0.00  std::_Function_base::_M_empty() const
+  0.00      0.00     0.00      100     0.00     0.00  std::function<double (double, double)>::operator()(double, double) const
+  0.00      0.00     0.00      100     0.00     0.00  std::_Any_data::_M_access() const
+  0.00      0.00     0.00      100     0.00     0.00  main::{lambda(double, double)#1} const& std::_Any_data::_M_access<main::{lambda(double, double)#1}>() const
+  0.00      0.00     0.00      100     0.00     0.00  std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_get_pointer(std::_Any_data const&)
+  0.00      0.00     0.00      100     0.00     0.00  std::_Function_handler<double (double, double), main::{lambda(double, double)#1}>::_M_invoke(std::_Any_data const&, double&&, std::_Any_data const&)
+  0.00      0.00     0.00      100     0.00     0.00  main::{lambda(double, double)#1} const* std::__addressof<main::{lambda(double, double)#1} const>(main::{lambda(double, double)#1} const&)
+  0.00      0.00     0.00      100     0.00     0.00  main::{lambda(double, double)#1}::operator()(double, double) const
+  0.00      0.00     0.00       80     0.00     0.00  __gnu_cxx::__normal_iterator<double*, std::vector<double, std::allocator<double> > >::__normal_iterator(double* const&)
+  0.00      0.00     0.00       62     0.00     0.00  std::vector<double, std::allocator<double> >::operator[](unsigned long)
+  0.00      0.00     0.00       60     0.00     0.00  std::isnan(double)
+  0.00      0.00     0.00       40     0.00     0.00  __gnu_cxx::__normal_iterator<double*, std::vector<double, std::allocator<double> > >::operator*() const
+  0.00      0.00     0.00       40     0.00     0.00  __gnu_cxx::__normal_iterator<double*, std::vector<double, std::allocator<double> > >::operator-(long) const
+  0.00      0.00     0.00       40     0.00     0.00  std::vector<double, std::allocator<double> >::end()
+  0.00      0.00     0.00       40     0.00     0.00  std::vector<double, std::allocator<double> >::back()
+  0.00      0.00     0.00       40     0.00     0.00  ImplicitEuler::Newton(std::function<double (double, double)> const&, double, double, double)::{lambda(double, double, double, std::function<double (double, double)> const&)#2}::operator()(double, double, double, std::function<double (double, double)> const&) const
+  0.00      0.00     0.00       20     0.00     0.00  ImplicitEuler::Newton(std::function<double (double, double)> const&, double, double, double)
+  0.00      0.00     0.00       20     0.00     0.00  std::isinf(double)
+  0.00      0.00     0.00       20     0.00     0.00  ImplicitEuler::Newton(std::function<double (double, double)> const&, double, double, double)::{lambda(double, double, double, double, std::function<double (double, double)> const&)#1}::operator()(double, double, double, double, std::function<double (double, double)> const&) const
+  0.00      0.00     0.00        6     0.00     0.00  std::_Vector_base<double, std::allocator<double> >::_M_get_Tp_allocator()
+  0.00      0.00     0.00        5     0.00     0.00  __gnu_cxx::new_allocator<double>::~new_allocator()
+  0.00      0.00     0.00        5     0.00     0.00  std::allocator<double>::~allocator()
+  0.00      0.00     0.00        4     0.00     0.00  void std::_Destroy_aux<true>::__destroy<double*>(double*, double*)
+  0.00      0.00     0.00        4     0.00     0.00  std::_Vector_base<double, std::allocator<double> >::_M_deallocate(double*, unsigned long)
+  0.00      0.00     0.00        4     0.00     0.00  std::remove_reference<Solver*&>::type&& std::move<Solver*&>(Solver*&)
+  0.00      0.00     0.00        4     0.00     0.00  void std::_Destroy<double*>(double*, double*)
+  0.00      0.00     0.00        4     0.00     0.00  void std::_Destroy<double*, double>(double*, double*, std::allocator<double>&)
+  0.00      0.00     0.00        3     0.00     0.00  __gnu_cxx::new_allocator<double>::new_allocator()
+  0.00      0.00     0.00        3     0.00     0.00  __gnu_cxx::new_allocator<double>::max_size() const
+  0.00      0.00     0.00        3     0.00     0.00  std::vector<double, std::allocator<double> >::size() const
+  0.00      0.00     0.00        3     0.00     0.00  std::allocator<double>::allocator()
+  0.00      0.00     0.00        3     0.00     0.00  std::_Head_base<0ul, ImplicitEuler*, false>::_M_head(std::_Head_base<0ul, ImplicitEuler*, false>&)
+  0.00      0.00     0.00        3     0.00     0.00  std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >::_M_head(std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >&)
+  0.00      0.00     0.00        3     0.00     0.00  std::_Vector_base<double, std::allocator<double> >::_Vector_impl::~_Vector_impl()
+  0.00      0.00     0.00        3     0.00     0.00  std::_Vector_base<double, std::allocator<double> >::_Vector_impl_data::_Vector_impl_data()
+  0.00      0.00     0.00        3     0.00     0.00  std::_Vector_base<double, std::allocator<double> >::~_Vector_base()
+  0.00      0.00     0.00        3     0.00     0.00  std::__uniq_ptr_impl<ImplicitEuler, std::default_delete<ImplicitEuler> >::_M_ptr()
+  0.00      0.00     0.00        3     0.00     0.00  std::vector<double, std::allocator<double> >::~vector()
+  0.00      0.00     0.00        3     0.00     0.00  ImplicitEuler*& std::__get_helper<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >(std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >&)
+  0.00      0.00     0.00        3     0.00     0.00  std::tuple_element<0ul, std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> > >::type& std::get<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >(std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> >&)
+  0.00      0.00     0.00        3     0.00     0.00  std::remove_reference<main::{lambda(double, double)#1}&>::type&& std::move<main::{lambda(double, double)#1}&>(std::remove_reference&&)
+  0.00      0.00     0.00        3     0.00     0.00  double& std::forward<double&>(std::remove_reference<double&>::type&)
+  0.00      0.00     0.00        2     0.00     0.00  __gnu_cxx::new_allocator<double>::deallocate(double*, unsigned long)
+  0.00      0.00     0.00        2     0.00     0.00  __gnu_cxx::new_allocator<double>::allocate(unsigned long, void const*)
+  0.00      0.00     0.00        2     0.00     0.00  __gnu_cxx::new_allocator<double>::new_allocator(__gnu_cxx::new_allocator<double> const&)
+  0.00      0.00     0.00        2     0.00     0.00  __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >::__normal_iterator(double const* const&)
+  0.00      0.00     0.00        2     0.00     0.00  __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >::base() const
+  0.00      0.00     0.00        2     0.00     0.00  std::unique_ptr<Solver, std::default_delete<Solver> >::get() const
+  0.00      0.00     0.00        2     0.00     0.00  std::unique_ptr<Solver, std::default_delete<Solver> >::operator->() const
+  0.00      0.00     0.00        2     0.00     0.00  std::__uniq_ptr_impl<Solver, std::default_delete<Solver> >::_M_ptr() const
+  0.00      0.00     0.00        2     0.00     0.00  std::allocator<double>::allocator(std::allocator<double> const&)
+  0.00      0.00     0.00        2     0.00     0.00  std::_Head_base<0ul, Solver*, false>::_M_head(std::_Head_base<0ul, Solver*, false> const&)
+  0.00      0.00     0.00        2     0.00     0.00  std::_Head_base<0ul, Solver*, false>::_M_head(std::_Head_base<0ul, Solver*, false>&)
+  0.00      0.00     0.00        2     0.00     0.00  std::_Head_base<1ul, std::default_delete<Solver>, true>::_M_head(std::_Head_base<1ul, std::default_delete<Solver>, true>&)
+  0.00      0.00     0.00        2     0.00     0.00  std::unique_ptr<Solver, std::default_delete<Solver> >::get_deleter()
+  0.00      0.00     0.00        2     0.00     0.00  std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> >::_M_head(std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> > const&)
+  0.00      0.00     0.00        2     0.00     0.00  std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> >::_M_head(std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> >&)
+  0.00      0.00     0.00        2     0.00     0.00  std::_Tuple_impl<1ul, std::default_delete<Solver> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<Solver> >&)
+  0.00      0.00     0.00        2     0.00     0.00  std::_Vector_base<double, std::allocator<double> >::_M_allocate(unsigned long)
+  0.00      0.00     0.00        2     0.00     0.00  std::_Vector_base<double, std::allocator<double> >::_Vector_impl::_Vector_impl()
+  0.00      0.00     0.00        2     0.00     0.00  std::_Vector_base<double, std::allocator<double> >::_Vector_base()
+  0.00      0.00     0.00        2     0.00     0.00  std::__uniq_ptr_impl<Solver, std::default_delete<Solver> >::_M_deleter()
+  0.00      0.00     0.00        2     0.00     0.00  std::__uniq_ptr_impl<Solver, std::default_delete<Solver> >::_M_ptr()
+  0.00      0.00     0.00        2     0.00     0.00  std::allocator_traits<std::allocator<double> >::deallocate(std::allocator<double>&, double*, unsigned long)
+  0.00      0.00     0.00        2     0.00     0.00  std::allocator_traits<std::allocator<double> >::allocate(std::allocator<double>&, unsigned long)
+  0.00      0.00     0.00        2     0.00     0.00  std::vector<double, std::allocator<double> >::vector()
+  0.00      0.00     0.00        2     0.00     0.00  std::_Any_data::_M_access()
+  0.00      0.00     0.00        2     0.00     0.00  Solver* const& std::__get_helper<0ul, Solver*, std::default_delete<Solver> >(std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> > const&)
+  0.00      0.00     0.00        2     0.00     0.00  Solver*& std::__get_helper<0ul, Solver*, std::default_delete<Solver> >(std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> >&)
+  0.00      0.00     0.00        2     0.00     0.00  std::default_delete<Solver>& std::__get_helper<1ul, std::default_delete<Solver>>(std::_Tuple_impl<1ul, std::default_delete<Solver>>&)
+  0.00      0.00     0.00        2     0.00     0.00  __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > std::__miter_base<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > >(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >)
+  0.00      0.00     0.00        2     0.00     0.00  double const* std::__niter_base<double const*, std::vector<double, std::allocator<double> > >(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >)
+  0.00      0.00     0.00        2     0.00     0.00  double* std::__niter_base<double*>(double*)
+  0.00      0.00     0.00        2     0.00     0.00  double* std::__niter_wrap<double*>(double* const&, double*)
+  0.00      0.00     0.00        2     0.00     0.00  std::tuple_element<0ul, std::tuple<Solver*, std::default_delete<Solver> > >::type const& std::get<0ul, Solver*, std::default_delete<Solver> >(std::tuple<Solver*, std::default_delete<Solver> > const&)
+  0.00      0.00     0.00        2     0.00     0.00  std::tuple_element<0ul, std::tuple<Solver*, std::default_delete<Solver> > >::type& std::get<0ul, Solver*, std::default_delete<Solver> >(std::tuple<Solver*, std::default_delete<Solver> >&)
+  0.00      0.00     0.00        2     0.00     0.00  std::tuple_element<1ul, std::tuple<Solver*, std::default_delete<Solver> > >::type& std::get<1ul, Solver*, std::default_delete<Solver> >(std::tuple<Solver*, std::default_delete<Solver> >&)
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I__Z13error_squaredRKSt6vectorIdSaIdEES3_
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN13ExplicitEuler5solveERKSt8functionIFdddEE
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN13ImplicitEuler5solveERKSt8functionIFdddEE
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I_main
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  ImplicitEuler::solve(std::function<double (double, double)> const&)
+  0.00      0.00     0.00        1     0.00     0.00  ImplicitEuler::ImplicitEuler(double, double, double)
+  0.00      0.00     0.00        1     0.00     0.00  ImplicitEuler::~ImplicitEuler()
+  0.00      0.00     0.00        1     0.00     0.00  ImplicitEuler::~ImplicitEuler()
+  0.00      0.00     0.00        1     0.00     0.00  Solver::print_solution()
+  0.00      0.00     0.00        1     0.00     0.00  Solver::initialise_solution()
+  0.00      0.00     0.00        1     0.00     0.00  Solver::Solver(double, double, double)
+  0.00      0.00     0.00        1     0.00     0.00  Solver::~Solver()
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::__alloc_traits<std::allocator<double>, double>::_S_propagate_on_copy_assign()
+  0.00      0.00     0.00        1     0.00     0.00  std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::get() const
+  0.00      0.00     0.00        1     0.00     0.00  std::default_delete<Solver>::operator()(Solver*) const
+  0.00      0.00     0.00        1     0.00     0.00  std::__uniq_ptr_impl<ImplicitEuler, std::default_delete<ImplicitEuler> >::_M_ptr() const
+  0.00      0.00     0.00        1     0.00     0.00  std::basic_string_view<char, std::char_traits<char> >::data() const
+  0.00      0.00     0.00        1     0.00     0.00  std::basic_string_view<char, std::char_traits<char> >::size() const
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<double, std::allocator<double> >::end() const
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<double, std::allocator<double> >::begin() const
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<double, std::allocator<double> >::capacity() const
+  0.00      0.00     0.00        1     0.00     0.00  std::_Head_base<0ul, ImplicitEuler*, false>::_M_head(std::_Head_base<0ul, ImplicitEuler*, false> const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Head_base<0ul, ImplicitEuler*, false>::_Head_base()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Head_base<1ul, std::default_delete<ImplicitEuler>, true>::_M_head(std::_Head_base<1ul, std::default_delete<ImplicitEuler>, true>&)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Head_base<1ul, std::default_delete<ImplicitEuler>, true>::_Head_base()
+  0.00      0.00     0.00        1     0.00     0.00  std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::get_deleter()
+  0.00      0.00     0.00        1     0.00     0.00  std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::release()
+  0.00      0.00     0.00        1     0.00     0.00  std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::unique_ptr<std::default_delete<ImplicitEuler>, void>(ImplicitEuler*)
+  0.00      0.00     0.00        1     0.00     0.00  std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::~unique_ptr()
+  0.00      0.00     0.00        1     0.00     0.00  std::unique_ptr<Solver, std::default_delete<Solver> >::reset(Solver*)
+  0.00      0.00     0.00        1     0.00     0.00  std::unique_ptr<Solver, std::default_delete<Solver> >::~unique_ptr()
+  0.00      0.00     0.00        1     0.00     0.00  std::enable_if<std::__and_<std::__and_<std::is_convertible<std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::pointer, Solver*>, std::__not_<std::is_array<ImplicitEuler> > >, std::is_assignable<std::default_delete<Solver>&, std::default_delete<ImplicitEuler>&&> >::value, std::unique_ptr<Solver, std::default_delete<Solver> >&>::type std::unique_ptr<Solver, std::default_delete<Solver> >::operator=<ImplicitEuler, std::default_delete<ImplicitEuler> >(std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >&&)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >::_M_head(std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> > const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >::_Tuple_impl()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Tuple_impl<1ul, std::default_delete<ImplicitEuler> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<ImplicitEuler> >&)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Tuple_impl<1ul, std::default_delete<ImplicitEuler> >::_Tuple_impl()
+  0.00      0.00     0.00        1     0.00     0.00  double* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<double>(double const*, double const*, double*)
+  0.00      0.00     0.00        1     0.00     0.00  std::char_traits<char>::length(char const*)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<double, std::allocator<double> >::_Vector_impl::_Vector_impl(std::allocator<double> const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<double, std::allocator<double> >::_M_create_storage(unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<double, std::allocator<double> >::_Vector_base(unsigned long, std::allocator<double> const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_destroy(std::_Any_data&, std::integral_constant<bool, true>)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_manager(std::_Any_data&, std::_Function_base::_Base_manager<main::{lambda(double, double)#1}> const&, std::_Manager_operation)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_init_functor(std::_Any_data&, {lambda(double, double)#1}&&)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_init_functor(std::_Any_data&, {lambda(double, double)#1}&&, std::integral_constant<bool, true>)
+  0.00      0.00     0.00        1     0.00     0.00  bool std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_not_empty_function<{lambda(double, double)#1}>({lambda(double, double)#1} const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Function_base::_Function_base()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Function_base::~_Function_base()
+  0.00      0.00     0.00        1     0.00     0.00  std::default_delete<Solver>::default_delete<ImplicitEuler, void>(std::default_delete<ImplicitEuler> const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::__uniq_ptr_impl<ImplicitEuler, std::default_delete<ImplicitEuler> >::_M_deleter()
+  0.00      0.00     0.00        1     0.00     0.00  std::__uniq_ptr_impl<ImplicitEuler, std::default_delete<ImplicitEuler> >::__uniq_ptr_impl(ImplicitEuler*)
+  0.00      0.00     0.00        1     0.00     0.00  std::allocator_traits<std::allocator<double> >::max_size(std::allocator<double> const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::basic_string_view<char, std::char_traits<char> >::basic_string_view(char const*)
+  0.00      0.00     0.00        1     0.00     0.00  double* std::__uninitialized_copy<true>::__uninit_copy<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*)
+  0.00      0.00     0.00        1     0.00     0.00  double* std::__uninitialized_fill_n<true>::__uninit_fill_n<double*, unsigned long, double>(double*, unsigned long, double const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> >::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler>, true>()
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<double, std::allocator<double> >::_S_max_size(std::allocator<double> const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<double, std::allocator<double> >::_S_check_init_len(unsigned long, std::allocator<double> const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<double, std::allocator<double> >::_M_fill_initialize(unsigned long, double const&)
+  0.00      0.00     0.00        1     0.00     0.00  double* std::vector<double, std::allocator<double> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > >(unsigned long, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >)
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<double, std::allocator<double> >::vector(unsigned long, double const&, std::allocator<double> const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::function<double (double, double)>::function<main::{lambda(double, double)#1}, void, void>(main::{lambda(double, double)#1})
+  0.00      0.00     0.00        1     0.00     0.00  std::function<double (double, double)>::~function()
+  0.00      0.00     0.00        1     0.00     0.00  main::{lambda(double, double)#1}& std::_Any_data::_M_access<main::{lambda(double, double)#1}>()
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::__enable_if<std::__is_scalar<double>::__value, double*>::__type std::__fill_n_a<double*, unsigned long, double>(double*, unsigned long, double const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::_MakeUniq<ImplicitEuler>::__single_object std::make_unique<ImplicitEuler, double&, double&, double&>(double&, double&, double&)
+  0.00      0.00     0.00        1     0.00     0.00  ImplicitEuler* const& std::__get_helper<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >(std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> > const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::default_delete<ImplicitEuler>& std::__get_helper<1ul, std::default_delete<ImplicitEuler>>(std::_Tuple_impl<1ul, std::default_delete<ImplicitEuler>>&)
+  0.00      0.00     0.00        1     0.00     0.00  double* std::__copy_move_a<false, double const*, double*>(double const*, double const*, double*)
+  0.00      0.00     0.00        1     0.00     0.00  double* std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*)
+  0.00      0.00     0.00        1     0.00     0.00  double* std::uninitialized_copy<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*)
+  0.00      0.00     0.00        1     0.00     0.00  double* std::uninitialized_fill_n<double*, unsigned long, double>(double*, unsigned long, double const&)
+  0.00      0.00     0.00        1     0.00     0.00  double* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*, double>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*, std::allocator<double>&)
+  0.00      0.00     0.00        1     0.00     0.00  double* std::__uninitialized_fill_n_a<double*, unsigned long, double, double>(double*, unsigned long, double const&, std::allocator<double>&)
+  0.00      0.00     0.00        1     0.00     0.00  std::tuple_element<0ul, std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> > >::type const& std::get<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >(std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> > const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::tuple_element<1ul, std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> > >::type& std::get<1ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >(std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> >&)
+  0.00      0.00     0.00        1     0.00     0.00  unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00      0.00     0.00        1     0.00     0.00  double* std::copy<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*)
+  0.00      0.00     0.00        1     0.00     0.00  std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Solver*> >, std::is_move_constructible<Solver*>, std::is_move_assignable<Solver*> >::value, void>::type std::swap<Solver*>(Solver*&, Solver*&)
+  0.00      0.00     0.00        1     0.00     0.00  double* std::fill_n<double*, unsigned long, double>(double*, unsigned long, double const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::default_delete<ImplicitEuler>&& std::forward<std::default_delete<ImplicitEuler> >(std::remove_reference<std::default_delete<ImplicitEuler> >::type&)
+  0.00      0.00     0.00        1     0.00     0.00  std::basic_ostream<char, std::char_traits<char> >& std::operator<< <char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, std::basic_string_view<char, std::char_traits<char> >)
+  0.00      0.00     0.00        1     0.00     0.00  operator new(unsigned long, void*)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) no time propagated
+
+index % time    self  children    called     name
+                0.00    0.00     200/400         std::_Function_handler<double (double, double), main::{lambda(double, double)#1}>::_M_invoke(std::_Any_data const&, double&&, std::_Any_data const&) [14]
+                0.00    0.00     200/400         std::function<double (double, double)>::operator()(double, double) const [10]
+[8]      0.0    0.00    0.00     400         double&& std::forward<double>(std::remove_reference<double>::type&) [8]
+-----------------------------------------------
+                0.00    0.00     100/100         std::function<double (double, double)>::operator()(double, double) const [10]
+[9]      0.0    0.00    0.00     100         std::_Function_base::_M_empty() const [9]
+-----------------------------------------------
+                0.00    0.00      20/100         ImplicitEuler::Newton(std::function<double (double, double)> const&, double, double, double)::{lambda(double, double, double, double, std::function<double (double, double)> const&)#1}::operator()(double, double, double, double, std::function<double (double, double)> const&) const [27]
+                0.00    0.00      80/100         ImplicitEuler::Newton(std::function<double (double, double)> const&, double, double, double)::{lambda(double, double, double, std::function<double (double, double)> const&)#2}::operator()(double, double, double, std::function<double (double, double)> const&) const [24]
+[10]     0.0    0.00    0.00     100         std::function<double (double, double)>::operator()(double, double) const [10]
+                0.00    0.00     200/400         double&& std::forward<double>(std::remove_reference<double>::type&) [8]
+                0.00    0.00     100/100         std::_Function_base::_M_empty() const [9]
+                0.00    0.00     100/100         std::_Function_handler<double (double, double), main::{lambda(double, double)#1}>::_M_invoke(std::_Any_data const&, double&&, std::_Any_data const&) [14]
+-----------------------------------------------
+                0.00    0.00     100/100         main::{lambda(double, double)#1} const& std::_Any_data::_M_access<main::{lambda(double, double)#1}>() const [12]
+[11]     0.0    0.00    0.00     100         std::_Any_data::_M_access() const [11]
+-----------------------------------------------
+                0.00    0.00     100/100         std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_get_pointer(std::_Any_data const&) [13]
+[12]     0.0    0.00    0.00     100         main::{lambda(double, double)#1} const& std::_Any_data::_M_access<main::{lambda(double, double)#1}>() const [12]
+                0.00    0.00     100/100         std::_Any_data::_M_access() const [11]
+-----------------------------------------------
+                0.00    0.00     100/100         std::_Function_handler<double (double, double), main::{lambda(double, double)#1}>::_M_invoke(std::_Any_data const&, double&&, std::_Any_data const&) [14]
+[13]     0.0    0.00    0.00     100         std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_get_pointer(std::_Any_data const&) [13]
+                0.00    0.00     100/100         main::{lambda(double, double)#1} const& std::_Any_data::_M_access<main::{lambda(double, double)#1}>() const [12]
+                0.00    0.00     100/100         main::{lambda(double, double)#1} const* std::__addressof<main::{lambda(double, double)#1} const>(main::{lambda(double, double)#1} const&) [15]
+-----------------------------------------------
+                0.00    0.00     100/100         std::function<double (double, double)>::operator()(double, double) const [10]
+[14]     0.0    0.00    0.00     100         std::_Function_handler<double (double, double), main::{lambda(double, double)#1}>::_M_invoke(std::_Any_data const&, double&&, std::_Any_data const&) [14]
+                0.00    0.00     200/400         double&& std::forward<double>(std::remove_reference<double>::type&) [8]
+                0.00    0.00     100/100         std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_get_pointer(std::_Any_data const&) [13]
+                0.00    0.00     100/100         main::{lambda(double, double)#1}::operator()(double, double) const [16]
+-----------------------------------------------
+                0.00    0.00     100/100         std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_get_pointer(std::_Any_data const&) [13]
+[15]     0.0    0.00    0.00     100         main::{lambda(double, double)#1} const* std::__addressof<main::{lambda(double, double)#1} const>(main::{lambda(double, double)#1} const&) [15]
+-----------------------------------------------
+                0.00    0.00     100/100         std::_Function_handler<double (double, double), main::{lambda(double, double)#1}>::_M_invoke(std::_Any_data const&, double&&, std::_Any_data const&) [14]
+[16]     0.0    0.00    0.00     100         main::{lambda(double, double)#1}::operator()(double, double) const [16]
+-----------------------------------------------
+                0.00    0.00      40/80          std::vector<double, std::allocator<double> >::end() [22]
+                0.00    0.00      40/80          __gnu_cxx::__normal_iterator<double*, std::vector<double, std::allocator<double> > >::operator-(long) const [21]
+[17]     0.0    0.00    0.00      80         __gnu_cxx::__normal_iterator<double*, std::vector<double, std::allocator<double> > >::__normal_iterator(double* const&) [17]
+-----------------------------------------------
+                0.00    0.00      21/62          Solver::print_solution() [98]
+                0.00    0.00      41/62          ImplicitEuler::solve(std::function<double (double, double)> const&) [94]
+[18]     0.0    0.00    0.00      62         std::vector<double, std::allocator<double> >::operator[](unsigned long) [18]
+-----------------------------------------------
+                0.00    0.00      60/60          ImplicitEuler::solve(std::function<double (double, double)> const&) [94]
+[19]     0.0    0.00    0.00      60         std::isnan(double) [19]
+-----------------------------------------------
+                0.00    0.00      40/40          std::vector<double, std::allocator<double> >::back() [23]
+[20]     0.0    0.00    0.00      40         __gnu_cxx::__normal_iterator<double*, std::vector<double, std::allocator<double> > >::operator*() const [20]
+-----------------------------------------------
+                0.00    0.00      40/40          std::vector<double, std::allocator<double> >::back() [23]
+[21]     0.0    0.00    0.00      40         __gnu_cxx::__normal_iterator<double*, std::vector<double, std::allocator<double> > >::operator-(long) const [21]
+                0.00    0.00      40/80          __gnu_cxx::__normal_iterator<double*, std::vector<double, std::allocator<double> > >::__normal_iterator(double* const&) [17]
+-----------------------------------------------
+                0.00    0.00      40/40          std::vector<double, std::allocator<double> >::back() [23]
+[22]     0.0    0.00    0.00      40         std::vector<double, std::allocator<double> >::end() [22]
+                0.00    0.00      40/80          __gnu_cxx::__normal_iterator<double*, std::vector<double, std::allocator<double> > >::__normal_iterator(double* const&) [17]
+-----------------------------------------------
+                0.00    0.00      40/40          ImplicitEuler::solve(std::function<double (double, double)> const&) [94]
+[23]     0.0    0.00    0.00      40         std::vector<double, std::allocator<double> >::back() [23]
+                0.00    0.00      40/40          std::vector<double, std::allocator<double> >::end() [22]
+                0.00    0.00      40/40          __gnu_cxx::__normal_iterator<double*, std::vector<double, std::allocator<double> > >::operator-(long) const [21]
+                0.00    0.00      40/40          __gnu_cxx::__normal_iterator<double*, std::vector<double, std::allocator<double> > >::operator*() const [20]
+-----------------------------------------------
+                0.00    0.00      40/40          ImplicitEuler::Newton(std::function<double (double, double)> const&, double, double, double) [25]
+[24]     0.0    0.00    0.00      40         ImplicitEuler::Newton(std::function<double (double, double)> const&, double, double, double)::{lambda(double, double, double, std::function<double (double, double)> const&)#2}::operator()(double, double, double, std::function<double (double, double)> const&) const [24]
+                0.00    0.00      80/100         std::function<double (double, double)>::operator()(double, double) const [10]
+-----------------------------------------------
+                0.00    0.00      20/20          ImplicitEuler::solve(std::function<double (double, double)> const&) [94]
+[25]     0.0    0.00    0.00      20         ImplicitEuler::Newton(std::function<double (double, double)> const&, double, double, double) [25]
+                0.00    0.00      40/40          ImplicitEuler::Newton(std::function<double (double, double)> const&, double, double, double)::{lambda(double, double, double, std::function<double (double, double)> const&)#2}::operator()(double, double, double, std::function<double (double, double)> const&) const [24]
+                0.00    0.00      20/20          ImplicitEuler::Newton(std::function<double (double, double)> const&, double, double, double)::{lambda(double, double, double, double, std::function<double (double, double)> const&)#1}::operator()(double, double, double, double, std::function<double (double, double)> const&) const [27]
+-----------------------------------------------
+                0.00    0.00      20/20          ImplicitEuler::solve(std::function<double (double, double)> const&) [94]
+[26]     0.0    0.00    0.00      20         std::isinf(double) [26]
+-----------------------------------------------
+                0.00    0.00      20/20          ImplicitEuler::Newton(std::function<double (double, double)> const&, double, double, double) [25]
+[27]     0.0    0.00    0.00      20         ImplicitEuler::Newton(std::function<double (double, double)> const&, double, double, double)::{lambda(double, double, double, double, std::function<double (double, double)> const&)#1}::operator()(double, double, double, double, std::function<double (double, double)> const&) const [27]
+                0.00    0.00      20/100         std::function<double (double, double)>::operator()(double, double) const [10]
+-----------------------------------------------
+                0.00    0.00       1/6           std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) [151]
+                0.00    0.00       1/6           std::vector<double, std::allocator<double> >::_M_fill_initialize(unsigned long, double const&) [148]
+                0.00    0.00       1/6           double* std::vector<double, std::allocator<double> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > >(unsigned long, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >) [149]
+                0.00    0.00       3/6           std::vector<double, std::allocator<double> >::~vector() [46]
+[28]     0.0    0.00    0.00       6         std::_Vector_base<double, std::allocator<double> >::_M_get_Tp_allocator() [28]
+-----------------------------------------------
+                0.00    0.00       5/5           std::allocator<double>::~allocator() [30]
+[29]     0.0    0.00    0.00       5         __gnu_cxx::new_allocator<double>::~new_allocator() [29]
+-----------------------------------------------
+                0.00    0.00       1/5           Solver::initialise_solution() [99]
+                0.00    0.00       1/5           std::vector<double, std::allocator<double> >::_S_check_init_len(unsigned long, std::allocator<double> const&) [147]
+                0.00    0.00       3/5           std::_Vector_base<double, std::allocator<double> >::_Vector_impl::~_Vector_impl() [42]
+[30]     0.0    0.00    0.00       5         std::allocator<double>::~allocator() [30]
+                0.00    0.00       5/5           __gnu_cxx::new_allocator<double>::~new_allocator() [29]
+-----------------------------------------------
+                0.00    0.00       4/4           void std::_Destroy<double*>(double*, double*) [34]
+[31]     0.0    0.00    0.00       4         void std::_Destroy_aux<true>::__destroy<double*>(double*, double*) [31]
+-----------------------------------------------
+                0.00    0.00       1/4           std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) [151]
+                0.00    0.00       3/4           std::_Vector_base<double, std::allocator<double> >::~_Vector_base() [44]
+[32]     0.0    0.00    0.00       4         std::_Vector_base<double, std::allocator<double> >::_M_deallocate(double*, unsigned long) [32]
+                0.00    0.00       2/2           std::allocator_traits<std::allocator<double> >::deallocate(std::allocator<double>&, double*, unsigned long) [72]
+-----------------------------------------------
+                0.00    0.00       1/4           std::unique_ptr<Solver, std::default_delete<Solver> >::~unique_ptr() [120]
+                0.00    0.00       3/4           std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Solver*> >, std::is_move_constructible<Solver*>, std::is_move_assignable<Solver*> >::value, void>::type std::swap<Solver*>(Solver*&, Solver*&) [169]
+[33]     0.0    0.00    0.00       4         std::remove_reference<Solver*&>::type&& std::move<Solver*&>(Solver*&) [33]
+-----------------------------------------------
+                0.00    0.00       4/4           void std::_Destroy<double*, double>(double*, double*, std::allocator<double>&) [35]
+[34]     0.0    0.00    0.00       4         void std::_Destroy<double*>(double*, double*) [34]
+                0.00    0.00       4/4           void std::_Destroy_aux<true>::__destroy<double*>(double*, double*) [31]
+-----------------------------------------------
+                0.00    0.00       1/4           std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) [151]
+                0.00    0.00       3/4           std::vector<double, std::allocator<double> >::~vector() [46]
+[35]     0.0    0.00    0.00       4         void std::_Destroy<double*, double>(double*, double*, std::allocator<double>&) [35]
+                0.00    0.00       4/4           void std::_Destroy<double*>(double*, double*) [34]
+-----------------------------------------------
+                0.00    0.00       3/3           std::allocator<double>::allocator() [39]
+[36]     0.0    0.00    0.00       3         __gnu_cxx::new_allocator<double>::new_allocator() [36]
+-----------------------------------------------
+                0.00    0.00       1/3           std::allocator_traits<std::allocator<double> >::max_size(std::allocator<double> const&) [141]
+                0.00    0.00       2/3           __gnu_cxx::new_allocator<double>::allocate(unsigned long, void const*) [52]
+[37]     0.0    0.00    0.00       3         __gnu_cxx::new_allocator<double>::max_size() const [37]
+-----------------------------------------------
+                0.00    0.00       1/3           ImplicitEuler::solve(std::function<double (double, double)> const&) [94]
+                0.00    0.00       1/3           Solver::print_solution() [98]
+                0.00    0.00       1/3           std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) [151]
+[38]     0.0    0.00    0.00       3         std::vector<double, std::allocator<double> >::size() const [38]
+-----------------------------------------------
+                0.00    0.00       1/3           Solver::initialise_solution() [99]
+                0.00    0.00       2/3           std::_Vector_base<double, std::allocator<double> >::_Vector_impl::_Vector_impl() [68]
+[39]     0.0    0.00    0.00       3         std::allocator<double>::allocator() [39]
+                0.00    0.00       3/3           __gnu_cxx::new_allocator<double>::new_allocator() [36]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >::_M_head(std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >&) [41]
+[40]     0.0    0.00    0.00       3         std::_Head_base<0ul, ImplicitEuler*, false>::_M_head(std::_Head_base<0ul, ImplicitEuler*, false>&) [40]
+-----------------------------------------------
+                0.00    0.00       3/3           ImplicitEuler*& std::__get_helper<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >(std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >&) [47]
+[41]     0.0    0.00    0.00       3         std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >::_M_head(std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >&) [41]
+                0.00    0.00       3/3           std::_Head_base<0ul, ImplicitEuler*, false>::_M_head(std::_Head_base<0ul, ImplicitEuler*, false>&) [40]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Vector_base<double, std::allocator<double> >::~_Vector_base() [44]
+[42]     0.0    0.00    0.00       3         std::_Vector_base<double, std::allocator<double> >::_Vector_impl::~_Vector_impl() [42]
+                0.00    0.00       3/5           std::allocator<double>::~allocator() [30]
+-----------------------------------------------
+                0.00    0.00       1/3           std::_Vector_base<double, std::allocator<double> >::_Vector_impl::_Vector_impl(std::allocator<double> const&) [128]
+                0.00    0.00       2/3           std::_Vector_base<double, std::allocator<double> >::_Vector_impl::_Vector_impl() [68]
+[43]     0.0    0.00    0.00       3         std::_Vector_base<double, std::allocator<double> >::_Vector_impl_data::_Vector_impl_data() [43]
+-----------------------------------------------
+                0.00    0.00       3/3           std::vector<double, std::allocator<double> >::~vector() [46]
+[44]     0.0    0.00    0.00       3         std::_Vector_base<double, std::allocator<double> >::~_Vector_base() [44]
+                0.00    0.00       3/4           std::_Vector_base<double, std::allocator<double> >::_M_deallocate(double*, unsigned long) [32]
+                0.00    0.00       3/3           std::_Vector_base<double, std::allocator<double> >::_Vector_impl::~_Vector_impl() [42]
+-----------------------------------------------
+                0.00    0.00       1/3           std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::~unique_ptr() [118]
+                0.00    0.00       1/3           std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::release() [116]
+                0.00    0.00       1/3           std::__uniq_ptr_impl<ImplicitEuler, std::default_delete<ImplicitEuler> >::__uniq_ptr_impl(ImplicitEuler*) [140]
+[45]     0.0    0.00    0.00       3         std::__uniq_ptr_impl<ImplicitEuler, std::default_delete<ImplicitEuler> >::_M_ptr() [45]
+                0.00    0.00       3/3           std::tuple_element<0ul, std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> > >::type& std::get<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >(std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> >&) [48]
+-----------------------------------------------
+                0.00    0.00       1/3           main [6]
+                0.00    0.00       1/3           Solver::~Solver() [101]
+                0.00    0.00       1/3           Solver::initialise_solution() [99]
+[46]     0.0    0.00    0.00       3         std::vector<double, std::allocator<double> >::~vector() [46]
+                0.00    0.00       3/6           std::_Vector_base<double, std::allocator<double> >::_M_get_Tp_allocator() [28]
+                0.00    0.00       3/4           void std::_Destroy<double*, double>(double*, double*, std::allocator<double>&) [35]
+                0.00    0.00       3/3           std::_Vector_base<double, std::allocator<double> >::~_Vector_base() [44]
+-----------------------------------------------
+                0.00    0.00       3/3           std::tuple_element<0ul, std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> > >::type& std::get<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >(std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> >&) [48]
+[47]     0.0    0.00    0.00       3         ImplicitEuler*& std::__get_helper<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >(std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >&) [47]
+                0.00    0.00       3/3           std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >::_M_head(std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >&) [41]
+-----------------------------------------------
+                0.00    0.00       3/3           std::__uniq_ptr_impl<ImplicitEuler, std::default_delete<ImplicitEuler> >::_M_ptr() [45]
+[48]     0.0    0.00    0.00       3         std::tuple_element<0ul, std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> > >::type& std::get<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >(std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> >&) [48]
+                0.00    0.00       3/3           ImplicitEuler*& std::__get_helper<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >(std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >&) [47]
+-----------------------------------------------
+                0.00    0.00       1/3           std::function<double (double, double)>::function<main::{lambda(double, double)#1}, void, void>(main::{lambda(double, double)#1}) [152]
+                0.00    0.00       1/3           std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_init_functor(std::_Any_data&, {lambda(double, double)#1}&&) [133]
+                0.00    0.00       1/3           std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_init_functor(std::_Any_data&, {lambda(double, double)#1}&&, std::integral_constant<bool, true>) [134]
+[49]     0.0    0.00    0.00       3         std::remove_reference<main::{lambda(double, double)#1}&>::type&& std::move<main::{lambda(double, double)#1}&>(std::remove_reference&&) [49]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_MakeUniq<ImplicitEuler>::__single_object std::make_unique<ImplicitEuler, double&, double&, double&>(double&, double&, double&) [156]
+[50]     0.0    0.00    0.00       3         double& std::forward<double&>(std::remove_reference<double&>::type&) [50]
+-----------------------------------------------
+                0.00    0.00       2/2           std::allocator_traits<std::allocator<double> >::deallocate(std::allocator<double>&, double*, unsigned long) [72]
+[51]     0.0    0.00    0.00       2         __gnu_cxx::new_allocator<double>::deallocate(double*, unsigned long) [51]
+-----------------------------------------------
+                0.00    0.00       2/2           std::allocator_traits<std::allocator<double> >::allocate(std::allocator<double>&, unsigned long) [73]
+[52]     0.0    0.00    0.00       2         __gnu_cxx::new_allocator<double>::allocate(unsigned long, void const*) [52]
+                0.00    0.00       2/3           __gnu_cxx::new_allocator<double>::max_size() const [37]
+-----------------------------------------------
+                0.00    0.00       2/2           std::allocator<double>::allocator(std::allocator<double> const&) [59]
+[53]     0.0    0.00    0.00       2         __gnu_cxx::new_allocator<double>::new_allocator(__gnu_cxx::new_allocator<double> const&) [53]
+-----------------------------------------------
+                0.00    0.00       1/2           std::vector<double, std::allocator<double> >::begin() const [109]
+                0.00    0.00       1/2           std::vector<double, std::allocator<double> >::end() const [108]
+[54]     0.0    0.00    0.00       2         __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >::__normal_iterator(double const* const&) [54]
+-----------------------------------------------
+                0.00    0.00       2/2           double const* std::__niter_base<double const*, std::vector<double, std::allocator<double> > >(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >) [80]
+[55]     0.0    0.00    0.00       2         __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >::base() const [55]
+-----------------------------------------------
+                0.00    0.00       2/2           std::unique_ptr<Solver, std::default_delete<Solver> >::operator->() const [57]
+[56]     0.0    0.00    0.00       2         std::unique_ptr<Solver, std::default_delete<Solver> >::get() const [56]
+                0.00    0.00       2/2           std::__uniq_ptr_impl<Solver, std::default_delete<Solver> >::_M_ptr() const [58]
+-----------------------------------------------
+                0.00    0.00       2/2           main [6]
+[57]     0.0    0.00    0.00       2         std::unique_ptr<Solver, std::default_delete<Solver> >::operator->() const [57]
+                0.00    0.00       2/2           std::unique_ptr<Solver, std::default_delete<Solver> >::get() const [56]
+-----------------------------------------------
+                0.00    0.00       2/2           std::unique_ptr<Solver, std::default_delete<Solver> >::get() const [56]
+[58]     0.0    0.00    0.00       2         std::__uniq_ptr_impl<Solver, std::default_delete<Solver> >::_M_ptr() const [58]
+                0.00    0.00       2/2           std::tuple_element<0ul, std::tuple<Solver*, std::default_delete<Solver> > >::type const& std::get<0ul, Solver*, std::default_delete<Solver> >(std::tuple<Solver*, std::default_delete<Solver> > const&) [83]
+-----------------------------------------------
+                0.00    0.00       1/2           std::vector<double, std::allocator<double> >::_S_check_init_len(unsigned long, std::allocator<double> const&) [147]
+                0.00    0.00       1/2           std::_Vector_base<double, std::allocator<double> >::_Vector_impl::_Vector_impl(std::allocator<double> const&) [128]
+[59]     0.0    0.00    0.00       2         std::allocator<double>::allocator(std::allocator<double> const&) [59]
+                0.00    0.00       2/2           __gnu_cxx::new_allocator<double>::new_allocator(__gnu_cxx::new_allocator<double> const&) [53]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> >::_M_head(std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> > const&) [64]
+[60]     0.0    0.00    0.00       2         std::_Head_base<0ul, Solver*, false>::_M_head(std::_Head_base<0ul, Solver*, false> const&) [60]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> >::_M_head(std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> >&) [65]
+[61]     0.0    0.00    0.00       2         std::_Head_base<0ul, Solver*, false>::_M_head(std::_Head_base<0ul, Solver*, false>&) [61]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Tuple_impl<1ul, std::default_delete<Solver> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<Solver> >&) [66]
+[62]     0.0    0.00    0.00       2         std::_Head_base<1ul, std::default_delete<Solver>, true>::_M_head(std::_Head_base<1ul, std::default_delete<Solver>, true>&) [62]
+-----------------------------------------------
+                0.00    0.00       1/2           std::unique_ptr<Solver, std::default_delete<Solver> >::~unique_ptr() [120]
+                0.00    0.00       1/2           std::enable_if<std::__and_<std::__and_<std::is_convertible<std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::pointer, Solver*>, std::__not_<std::is_array<ImplicitEuler> > >, std::is_assignable<std::default_delete<Solver>&, std::default_delete<ImplicitEuler>&&> >::value, std::unique_ptr<Solver, std::default_delete<Solver> >&>::type std::unique_ptr<Solver, std::default_delete<Solver> >::operator=<ImplicitEuler, std::default_delete<ImplicitEuler> >(std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >&&) [121]
+[63]     0.0    0.00    0.00       2         std::unique_ptr<Solver, std::default_delete<Solver> >::get_deleter() [63]
+                0.00    0.00       2/2           std::__uniq_ptr_impl<Solver, std::default_delete<Solver> >::_M_deleter() [70]
+-----------------------------------------------
+                0.00    0.00       2/2           Solver* const& std::__get_helper<0ul, Solver*, std::default_delete<Solver> >(std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> > const&) [76]
+[64]     0.0    0.00    0.00       2         std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> >::_M_head(std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> > const&) [64]
+                0.00    0.00       2/2           std::_Head_base<0ul, Solver*, false>::_M_head(std::_Head_base<0ul, Solver*, false> const&) [60]
+-----------------------------------------------
+                0.00    0.00       2/2           Solver*& std::__get_helper<0ul, Solver*, std::default_delete<Solver> >(std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> >&) [77]
+[65]     0.0    0.00    0.00       2         std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> >::_M_head(std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> >&) [65]
+                0.00    0.00       2/2           std::_Head_base<0ul, Solver*, false>::_M_head(std::_Head_base<0ul, Solver*, false>&) [61]
+-----------------------------------------------
+                0.00    0.00       2/2           std::default_delete<Solver>& std::__get_helper<1ul, std::default_delete<Solver>>(std::_Tuple_impl<1ul, std::default_delete<Solver>>&) [78]
+[66]     0.0    0.00    0.00       2         std::_Tuple_impl<1ul, std::default_delete<Solver> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<Solver> >&) [66]
+                0.00    0.00       2/2           std::_Head_base<1ul, std::default_delete<Solver>, true>::_M_head(std::_Head_base<1ul, std::default_delete<Solver>, true>&) [62]
+-----------------------------------------------
+                0.00    0.00       1/2           double* std::vector<double, std::allocator<double> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > >(unsigned long, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >) [149]
+                0.00    0.00       1/2           std::_Vector_base<double, std::allocator<double> >::_M_create_storage(unsigned long) [129]
+[67]     0.0    0.00    0.00       2         std::_Vector_base<double, std::allocator<double> >::_M_allocate(unsigned long) [67]
+                0.00    0.00       2/2           std::allocator_traits<std::allocator<double> >::allocate(std::allocator<double>&, unsigned long) [73]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<double, std::allocator<double> >::_Vector_base() [69]
+[68]     0.0    0.00    0.00       2         std::_Vector_base<double, std::allocator<double> >::_Vector_impl::_Vector_impl() [68]
+                0.00    0.00       2/3           std::allocator<double>::allocator() [39]
+                0.00    0.00       2/3           std::_Vector_base<double, std::allocator<double> >::_Vector_impl_data::_Vector_impl_data() [43]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<double, std::allocator<double> >::vector() [74]
+[69]     0.0    0.00    0.00       2         std::_Vector_base<double, std::allocator<double> >::_Vector_base() [69]
+                0.00    0.00       2/2           std::_Vector_base<double, std::allocator<double> >::_Vector_impl::_Vector_impl() [68]
+-----------------------------------------------
+                0.00    0.00       2/2           std::unique_ptr<Solver, std::default_delete<Solver> >::get_deleter() [63]
+[70]     0.0    0.00    0.00       2         std::__uniq_ptr_impl<Solver, std::default_delete<Solver> >::_M_deleter() [70]
+                0.00    0.00       2/2           std::tuple_element<1ul, std::tuple<Solver*, std::default_delete<Solver> > >::type& std::get<1ul, Solver*, std::default_delete<Solver> >(std::tuple<Solver*, std::default_delete<Solver> >&) [85]
+-----------------------------------------------
+                0.00    0.00       1/2           std::unique_ptr<Solver, std::default_delete<Solver> >::~unique_ptr() [120]
+                0.00    0.00       1/2           std::unique_ptr<Solver, std::default_delete<Solver> >::reset(Solver*) [119]
+[71]     0.0    0.00    0.00       2         std::__uniq_ptr_impl<Solver, std::default_delete<Solver> >::_M_ptr() [71]
+                0.00    0.00       2/2           std::tuple_element<0ul, std::tuple<Solver*, std::default_delete<Solver> > >::type& std::get<0ul, Solver*, std::default_delete<Solver> >(std::tuple<Solver*, std::default_delete<Solver> >&) [84]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<double, std::allocator<double> >::_M_deallocate(double*, unsigned long) [32]
+[72]     0.0    0.00    0.00       2         std::allocator_traits<std::allocator<double> >::deallocate(std::allocator<double>&, double*, unsigned long) [72]
+                0.00    0.00       2/2           __gnu_cxx::new_allocator<double>::deallocate(double*, unsigned long) [51]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<double, std::allocator<double> >::_M_allocate(unsigned long) [67]
+[73]     0.0    0.00    0.00       2         std::allocator_traits<std::allocator<double> >::allocate(std::allocator<double>&, unsigned long) [73]
+                0.00    0.00       2/2           __gnu_cxx::new_allocator<double>::allocate(unsigned long, void const*) [52]
+-----------------------------------------------
+                0.00    0.00       1/2           main [6]
+                0.00    0.00       1/2           Solver::Solver(double, double, double) [100]
+[74]     0.0    0.00    0.00       2         std::vector<double, std::allocator<double> >::vector() [74]
+                0.00    0.00       2/2           std::_Vector_base<double, std::allocator<double> >::_Vector_base() [69]
+-----------------------------------------------
+                0.00    0.00       1/2           std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_init_functor(std::_Any_data&, {lambda(double, double)#1}&&, std::integral_constant<bool, true>) [134]
+                0.00    0.00       1/2           main::{lambda(double, double)#1}& std::_Any_data::_M_access<main::{lambda(double, double)#1}>() [154]
+[75]     0.0    0.00    0.00       2         std::_Any_data::_M_access() [75]
+-----------------------------------------------
+                0.00    0.00       2/2           std::tuple_element<0ul, std::tuple<Solver*, std::default_delete<Solver> > >::type const& std::get<0ul, Solver*, std::default_delete<Solver> >(std::tuple<Solver*, std::default_delete<Solver> > const&) [83]
+[76]     0.0    0.00    0.00       2         Solver* const& std::__get_helper<0ul, Solver*, std::default_delete<Solver> >(std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> > const&) [76]
+                0.00    0.00       2/2           std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> >::_M_head(std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> > const&) [64]
+-----------------------------------------------
+                0.00    0.00       2/2           std::tuple_element<0ul, std::tuple<Solver*, std::default_delete<Solver> > >::type& std::get<0ul, Solver*, std::default_delete<Solver> >(std::tuple<Solver*, std::default_delete<Solver> >&) [84]
+[77]     0.0    0.00    0.00       2         Solver*& std::__get_helper<0ul, Solver*, std::default_delete<Solver> >(std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> >&) [77]
+                0.00    0.00       2/2           std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> >::_M_head(std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> >&) [65]
+-----------------------------------------------
+                0.00    0.00       2/2           std::tuple_element<1ul, std::tuple<Solver*, std::default_delete<Solver> > >::type& std::get<1ul, Solver*, std::default_delete<Solver> >(std::tuple<Solver*, std::default_delete<Solver> >&) [85]
+[78]     0.0    0.00    0.00       2         std::default_delete<Solver>& std::__get_helper<1ul, std::default_delete<Solver>>(std::_Tuple_impl<1ul, std::default_delete<Solver>>&) [78]
+                0.00    0.00       2/2           std::_Tuple_impl<1ul, std::default_delete<Solver> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<Solver> >&) [66]
+-----------------------------------------------
+                0.00    0.00       2/2           double* std::copy<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*) [168]
+[79]     0.0    0.00    0.00       2         __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > std::__miter_base<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > >(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >) [79]
+-----------------------------------------------
+                0.00    0.00       2/2           double* std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*) [160]
+[80]     0.0    0.00    0.00       2         double const* std::__niter_base<double const*, std::vector<double, std::allocator<double> > >(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >) [80]
+                0.00    0.00       2/2           __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >::base() const [55]
+-----------------------------------------------
+                0.00    0.00       1/2           double* std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*) [160]
+                0.00    0.00       1/2           double* std::fill_n<double*, unsigned long, double>(double*, unsigned long, double const&) [170]
+[81]     0.0    0.00    0.00       2         double* std::__niter_base<double*>(double*) [81]
+-----------------------------------------------
+                0.00    0.00       1/2           double* std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*) [160]
+                0.00    0.00       1/2           double* std::fill_n<double*, unsigned long, double>(double*, unsigned long, double const&) [170]
+[82]     0.0    0.00    0.00       2         double* std::__niter_wrap<double*>(double* const&, double*) [82]
+-----------------------------------------------
+                0.00    0.00       2/2           std::__uniq_ptr_impl<Solver, std::default_delete<Solver> >::_M_ptr() const [58]
+[83]     0.0    0.00    0.00       2         std::tuple_element<0ul, std::tuple<Solver*, std::default_delete<Solver> > >::type const& std::get<0ul, Solver*, std::default_delete<Solver> >(std::tuple<Solver*, std::default_delete<Solver> > const&) [83]
+                0.00    0.00       2/2           Solver* const& std::__get_helper<0ul, Solver*, std::default_delete<Solver> >(std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> > const&) [76]
+-----------------------------------------------
+                0.00    0.00       2/2           std::__uniq_ptr_impl<Solver, std::default_delete<Solver> >::_M_ptr() [71]
+[84]     0.0    0.00    0.00       2         std::tuple_element<0ul, std::tuple<Solver*, std::default_delete<Solver> > >::type& std::get<0ul, Solver*, std::default_delete<Solver> >(std::tuple<Solver*, std::default_delete<Solver> >&) [84]
+                0.00    0.00       2/2           Solver*& std::__get_helper<0ul, Solver*, std::default_delete<Solver> >(std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> >&) [77]
+-----------------------------------------------
+                0.00    0.00       2/2           std::__uniq_ptr_impl<Solver, std::default_delete<Solver> >::_M_deleter() [70]
+[85]     0.0    0.00    0.00       2         std::tuple_element<1ul, std::tuple<Solver*, std::default_delete<Solver> > >::type& std::get<1ul, Solver*, std::default_delete<Solver> >(std::tuple<Solver*, std::default_delete<Solver> >&) [85]
+                0.00    0.00       2/2           std::default_delete<Solver>& std::__get_helper<1ul, std::default_delete<Solver>>(std::_Tuple_impl<1ul, std::default_delete<Solver>>&) [78]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [248]
+[86]     0.0    0.00    0.00       1         _GLOBAL__sub_I__Z13error_squaredRKSt6vectorIdSaIdEES3_ [86]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [93]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [248]
+[87]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN13ExplicitEuler5solveERKSt8functionIFdddEE [87]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [91]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [248]
+[88]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN13ImplicitEuler5solveERKSt8functionIFdddEE [88]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [92]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [248]
+[89]     0.0    0.00    0.00       1         _GLOBAL__sub_I_main [89]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [90]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I_main [89]
+[90]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [90]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN13ExplicitEuler5solveERKSt8functionIFdddEE [87]
+[91]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [91]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN13ImplicitEuler5solveERKSt8functionIFdddEE [88]
+[92]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [92]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__Z13error_squaredRKSt6vectorIdSaIdEES3_ [86]
+[93]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [93]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[94]     0.0    0.00    0.00       1         ImplicitEuler::solve(std::function<double (double, double)> const&) [94]
+                0.00    0.00      60/60          std::isnan(double) [19]
+                0.00    0.00      41/62          std::vector<double, std::allocator<double> >::operator[](unsigned long) [18]
+                0.00    0.00      40/40          std::vector<double, std::allocator<double> >::back() [23]
+                0.00    0.00      20/20          ImplicitEuler::Newton(std::function<double (double, double)> const&, double, double, double) [25]
+                0.00    0.00      20/20          std::isinf(double) [26]
+                0.00    0.00       1/3           std::vector<double, std::allocator<double> >::size() const [38]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_MakeUniq<ImplicitEuler>::__single_object std::make_unique<ImplicitEuler, double&, double&, double&>(double&, double&, double&) [156]
+[95]     0.0    0.00    0.00       1         ImplicitEuler::ImplicitEuler(double, double, double) [95]
+                0.00    0.00       1/1           Solver::Solver(double, double, double) [100]
+-----------------------------------------------
+                0.00    0.00       1/1           std::default_delete<Solver>::operator()(Solver*) const [104]
+[96]     0.0    0.00    0.00       1         ImplicitEuler::~ImplicitEuler() [96]
+                0.00    0.00       1/1           ImplicitEuler::~ImplicitEuler() [97]
+-----------------------------------------------
+                0.00    0.00       1/1           ImplicitEuler::~ImplicitEuler() [96]
+[97]     0.0    0.00    0.00       1         ImplicitEuler::~ImplicitEuler() [97]
+                0.00    0.00       1/1           Solver::~Solver() [101]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[98]     0.0    0.00    0.00       1         Solver::print_solution() [98]
+                0.00    0.00      21/62          std::vector<double, std::allocator<double> >::operator[](unsigned long) [18]
+                0.00    0.00       1/3           std::vector<double, std::allocator<double> >::size() const [38]
+-----------------------------------------------
+                0.00    0.00       1/1           Solver::Solver(double, double, double) [100]
+[99]     0.0    0.00    0.00       1         Solver::initialise_solution() [99]
+                0.00    0.00       1/3           std::allocator<double>::allocator() [39]
+                0.00    0.00       1/1           std::vector<double, std::allocator<double> >::vector(unsigned long, double const&, std::allocator<double> const&) [150]
+                0.00    0.00       1/5           std::allocator<double>::~allocator() [30]
+                0.00    0.00       1/1           std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) [151]
+                0.00    0.00       1/3           std::vector<double, std::allocator<double> >::~vector() [46]
+-----------------------------------------------
+                0.00    0.00       1/1           ImplicitEuler::ImplicitEuler(double, double, double) [95]
+[100]    0.0    0.00    0.00       1         Solver::Solver(double, double, double) [100]
+                0.00    0.00       1/2           std::vector<double, std::allocator<double> >::vector() [74]
+                0.00    0.00       1/1           Solver::initialise_solution() [99]
+-----------------------------------------------
+                0.00    0.00       1/1           ImplicitEuler::~ImplicitEuler() [97]
+[101]    0.0    0.00    0.00       1         Solver::~Solver() [101]
+                0.00    0.00       1/3           std::vector<double, std::allocator<double> >::~vector() [46]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) [151]
+[102]    0.0    0.00    0.00       1         __gnu_cxx::__alloc_traits<std::allocator<double>, double>::_S_propagate_on_copy_assign() [102]
+-----------------------------------------------
+                0.00    0.00       1/1           std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::release() [116]
+[103]    0.0    0.00    0.00       1         std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::get() const [103]
+                0.00    0.00       1/1           std::__uniq_ptr_impl<ImplicitEuler, std::default_delete<ImplicitEuler> >::_M_ptr() const [105]
+-----------------------------------------------
+                0.00    0.00       1/1           std::unique_ptr<Solver, std::default_delete<Solver> >::~unique_ptr() [120]
+[104]    0.0    0.00    0.00       1         std::default_delete<Solver>::operator()(Solver*) const [104]
+                0.00    0.00       1/1           ImplicitEuler::~ImplicitEuler() [96]
+-----------------------------------------------
+                0.00    0.00       1/1           std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::get() const [103]
+[105]    0.0    0.00    0.00       1         std::__uniq_ptr_impl<ImplicitEuler, std::default_delete<ImplicitEuler> >::_M_ptr() const [105]
+                0.00    0.00       1/1           std::tuple_element<0ul, std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> > >::type const& std::get<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >(std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> > const&) [165]
+-----------------------------------------------
+                0.00    0.00       1/1           std::basic_ostream<char, std::char_traits<char> >& std::operator<< <char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, std::basic_string_view<char, std::char_traits<char> >) [172]
+[106]    0.0    0.00    0.00       1         std::basic_string_view<char, std::char_traits<char> >::data() const [106]
+-----------------------------------------------
+                0.00    0.00       1/1           std::basic_ostream<char, std::char_traits<char> >& std::operator<< <char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, std::basic_string_view<char, std::char_traits<char> >) [172]
+[107]    0.0    0.00    0.00       1         std::basic_string_view<char, std::char_traits<char> >::size() const [107]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) [151]
+[108]    0.0    0.00    0.00       1         std::vector<double, std::allocator<double> >::end() const [108]
+                0.00    0.00       1/2           __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >::__normal_iterator(double const* const&) [54]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) [151]
+[109]    0.0    0.00    0.00       1         std::vector<double, std::allocator<double> >::begin() const [109]
+                0.00    0.00       1/2           __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >::__normal_iterator(double const* const&) [54]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) [151]
+[110]    0.0    0.00    0.00       1         std::vector<double, std::allocator<double> >::capacity() const [110]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >::_M_head(std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> > const&) [122]
+[111]    0.0    0.00    0.00       1         std::_Head_base<0ul, ImplicitEuler*, false>::_M_head(std::_Head_base<0ul, ImplicitEuler*, false> const&) [111]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >::_Tuple_impl() [123]
+[112]    0.0    0.00    0.00       1         std::_Head_base<0ul, ImplicitEuler*, false>::_Head_base() [112]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Tuple_impl<1ul, std::default_delete<ImplicitEuler> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<ImplicitEuler> >&) [124]
+[113]    0.0    0.00    0.00       1         std::_Head_base<1ul, std::default_delete<ImplicitEuler>, true>::_M_head(std::_Head_base<1ul, std::default_delete<ImplicitEuler>, true>&) [113]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Tuple_impl<1ul, std::default_delete<ImplicitEuler> >::_Tuple_impl() [125]
+[114]    0.0    0.00    0.00       1         std::_Head_base<1ul, std::default_delete<ImplicitEuler>, true>::_Head_base() [114]
+-----------------------------------------------
+                0.00    0.00       1/1           std::enable_if<std::__and_<std::__and_<std::is_convertible<std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::pointer, Solver*>, std::__not_<std::is_array<ImplicitEuler> > >, std::is_assignable<std::default_delete<Solver>&, std::default_delete<ImplicitEuler>&&> >::value, std::unique_ptr<Solver, std::default_delete<Solver> >&>::type std::unique_ptr<Solver, std::default_delete<Solver> >::operator=<ImplicitEuler, std::default_delete<ImplicitEuler> >(std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >&&) [121]
+[115]    0.0    0.00    0.00       1         std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::get_deleter() [115]
+                0.00    0.00       1/1           std::__uniq_ptr_impl<ImplicitEuler, std::default_delete<ImplicitEuler> >::_M_deleter() [139]
+-----------------------------------------------
+                0.00    0.00       1/1           std::enable_if<std::__and_<std::__and_<std::is_convertible<std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::pointer, Solver*>, std::__not_<std::is_array<ImplicitEuler> > >, std::is_assignable<std::default_delete<Solver>&, std::default_delete<ImplicitEuler>&&> >::value, std::unique_ptr<Solver, std::default_delete<Solver> >&>::type std::unique_ptr<Solver, std::default_delete<Solver> >::operator=<ImplicitEuler, std::default_delete<ImplicitEuler> >(std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >&&) [121]
+[116]    0.0    0.00    0.00       1         std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::release() [116]
+                0.00    0.00       1/1           std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::get() const [103]
+                0.00    0.00       1/3           std::__uniq_ptr_impl<ImplicitEuler, std::default_delete<ImplicitEuler> >::_M_ptr() [45]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_MakeUniq<ImplicitEuler>::__single_object std::make_unique<ImplicitEuler, double&, double&, double&>(double&, double&, double&) [156]
+[117]    0.0    0.00    0.00       1         std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::unique_ptr<std::default_delete<ImplicitEuler>, void>(ImplicitEuler*) [117]
+                0.00    0.00       1/1           std::__uniq_ptr_impl<ImplicitEuler, std::default_delete<ImplicitEuler> >::__uniq_ptr_impl(ImplicitEuler*) [140]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[118]    0.0    0.00    0.00       1         std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::~unique_ptr() [118]
+                0.00    0.00       1/3           std::__uniq_ptr_impl<ImplicitEuler, std::default_delete<ImplicitEuler> >::_M_ptr() [45]
+-----------------------------------------------
+                0.00    0.00       1/1           std::enable_if<std::__and_<std::__and_<std::is_convertible<std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::pointer, Solver*>, std::__not_<std::is_array<ImplicitEuler> > >, std::is_assignable<std::default_delete<Solver>&, std::default_delete<ImplicitEuler>&&> >::value, std::unique_ptr<Solver, std::default_delete<Solver> >&>::type std::unique_ptr<Solver, std::default_delete<Solver> >::operator=<ImplicitEuler, std::default_delete<ImplicitEuler> >(std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >&&) [121]
+[119]    0.0    0.00    0.00       1         std::unique_ptr<Solver, std::default_delete<Solver> >::reset(Solver*) [119]
+                0.00    0.00       1/2           std::__uniq_ptr_impl<Solver, std::default_delete<Solver> >::_M_ptr() [71]
+                0.00    0.00       1/1           std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Solver*> >, std::is_move_constructible<Solver*>, std::is_move_assignable<Solver*> >::value, void>::type std::swap<Solver*>(Solver*&, Solver*&) [169]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[120]    0.0    0.00    0.00       1         std::unique_ptr<Solver, std::default_delete<Solver> >::~unique_ptr() [120]
+                0.00    0.00       1/2           std::__uniq_ptr_impl<Solver, std::default_delete<Solver> >::_M_ptr() [71]
+                0.00    0.00       1/2           std::unique_ptr<Solver, std::default_delete<Solver> >::get_deleter() [63]
+                0.00    0.00       1/4           std::remove_reference<Solver*&>::type&& std::move<Solver*&>(Solver*&) [33]
+                0.00    0.00       1/1           std::default_delete<Solver>::operator()(Solver*) const [104]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[121]    0.0    0.00    0.00       1         std::enable_if<std::__and_<std::__and_<std::is_convertible<std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::pointer, Solver*>, std::__not_<std::is_array<ImplicitEuler> > >, std::is_assignable<std::default_delete<Solver>&, std::default_delete<ImplicitEuler>&&> >::value, std::unique_ptr<Solver, std::default_delete<Solver> >&>::type std::unique_ptr<Solver, std::default_delete<Solver> >::operator=<ImplicitEuler, std::default_delete<ImplicitEuler> >(std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >&&) [121]
+                0.00    0.00       1/1           std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::release() [116]
+                0.00    0.00       1/1           std::unique_ptr<Solver, std::default_delete<Solver> >::reset(Solver*) [119]
+                0.00    0.00       1/1           std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::get_deleter() [115]
+                0.00    0.00       1/1           std::default_delete<ImplicitEuler>&& std::forward<std::default_delete<ImplicitEuler> >(std::remove_reference<std::default_delete<ImplicitEuler> >::type&) [171]
+                0.00    0.00       1/1           std::default_delete<Solver>::default_delete<ImplicitEuler, void>(std::default_delete<ImplicitEuler> const&) [138]
+                0.00    0.00       1/2           std::unique_ptr<Solver, std::default_delete<Solver> >::get_deleter() [63]
+-----------------------------------------------
+                0.00    0.00       1/1           ImplicitEuler* const& std::__get_helper<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >(std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> > const&) [157]
+[122]    0.0    0.00    0.00       1         std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >::_M_head(std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> > const&) [122]
+                0.00    0.00       1/1           std::_Head_base<0ul, ImplicitEuler*, false>::_M_head(std::_Head_base<0ul, ImplicitEuler*, false> const&) [111]
+-----------------------------------------------
+                0.00    0.00       1/1           std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> >::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler>, true>() [145]
+[123]    0.0    0.00    0.00       1         std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >::_Tuple_impl() [123]
+                0.00    0.00       1/1           std::_Tuple_impl<1ul, std::default_delete<ImplicitEuler> >::_Tuple_impl() [125]
+                0.00    0.00       1/1           std::_Head_base<0ul, ImplicitEuler*, false>::_Head_base() [112]
+-----------------------------------------------
+                0.00    0.00       1/1           std::default_delete<ImplicitEuler>& std::__get_helper<1ul, std::default_delete<ImplicitEuler>>(std::_Tuple_impl<1ul, std::default_delete<ImplicitEuler>>&) [158]
+[124]    0.0    0.00    0.00       1         std::_Tuple_impl<1ul, std::default_delete<ImplicitEuler> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<ImplicitEuler> >&) [124]
+                0.00    0.00       1/1           std::_Head_base<1ul, std::default_delete<ImplicitEuler>, true>::_M_head(std::_Head_base<1ul, std::default_delete<ImplicitEuler>, true>&) [113]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >::_Tuple_impl() [123]
+[125]    0.0    0.00    0.00       1         std::_Tuple_impl<1ul, std::default_delete<ImplicitEuler> >::_Tuple_impl() [125]
+                0.00    0.00       1/1           std::_Head_base<1ul, std::default_delete<ImplicitEuler>, true>::_Head_base() [114]
+-----------------------------------------------
+                0.00    0.00       1/1           double* std::__copy_move_a<false, double const*, double*>(double const*, double const*, double*) [159]
+[126]    0.0    0.00    0.00       1         double* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<double>(double const*, double const*, double*) [126]
+-----------------------------------------------
+                0.00    0.00       1/1           std::basic_string_view<char, std::char_traits<char> >::basic_string_view(char const*) [142]
+[127]    0.0    0.00    0.00       1         std::char_traits<char>::length(char const*) [127]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<double, std::allocator<double> >::_Vector_base(unsigned long, std::allocator<double> const&) [130]
+[128]    0.0    0.00    0.00       1         std::_Vector_base<double, std::allocator<double> >::_Vector_impl::_Vector_impl(std::allocator<double> const&) [128]
+                0.00    0.00       1/2           std::allocator<double>::allocator(std::allocator<double> const&) [59]
+                0.00    0.00       1/3           std::_Vector_base<double, std::allocator<double> >::_Vector_impl_data::_Vector_impl_data() [43]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<double, std::allocator<double> >::_Vector_base(unsigned long, std::allocator<double> const&) [130]
+[129]    0.0    0.00    0.00       1         std::_Vector_base<double, std::allocator<double> >::_M_create_storage(unsigned long) [129]
+                0.00    0.00       1/2           std::_Vector_base<double, std::allocator<double> >::_M_allocate(unsigned long) [67]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<double, std::allocator<double> >::vector(unsigned long, double const&, std::allocator<double> const&) [150]
+[130]    0.0    0.00    0.00       1         std::_Vector_base<double, std::allocator<double> >::_Vector_base(unsigned long, std::allocator<double> const&) [130]
+                0.00    0.00       1/1           std::_Vector_base<double, std::allocator<double> >::_Vector_impl::_Vector_impl(std::allocator<double> const&) [128]
+                0.00    0.00       1/1           std::_Vector_base<double, std::allocator<double> >::_M_create_storage(unsigned long) [129]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_manager(std::_Any_data&, std::_Function_base::_Base_manager<main::{lambda(double, double)#1}> const&, std::_Manager_operation) [132]
+[131]    0.0    0.00    0.00       1         std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_destroy(std::_Any_data&, std::integral_constant<bool, true>) [131]
+                0.00    0.00       1/1           main::{lambda(double, double)#1}& std::_Any_data::_M_access<main::{lambda(double, double)#1}>() [154]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Function_base::~_Function_base() [137]
+[132]    0.0    0.00    0.00       1         std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_manager(std::_Any_data&, std::_Function_base::_Base_manager<main::{lambda(double, double)#1}> const&, std::_Manager_operation) [132]
+                0.00    0.00       1/1           std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_destroy(std::_Any_data&, std::integral_constant<bool, true>) [131]
+-----------------------------------------------
+                0.00    0.00       1/1           std::function<double (double, double)>::function<main::{lambda(double, double)#1}, void, void>(main::{lambda(double, double)#1}) [152]
+[133]    0.0    0.00    0.00       1         std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_init_functor(std::_Any_data&, {lambda(double, double)#1}&&) [133]
+                0.00    0.00       1/3           std::remove_reference<main::{lambda(double, double)#1}&>::type&& std::move<main::{lambda(double, double)#1}&>(std::remove_reference&&) [49]
+                0.00    0.00       1/1           std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_init_functor(std::_Any_data&, {lambda(double, double)#1}&&, std::integral_constant<bool, true>) [134]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_init_functor(std::_Any_data&, {lambda(double, double)#1}&&) [133]
+[134]    0.0    0.00    0.00       1         std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_init_functor(std::_Any_data&, {lambda(double, double)#1}&&, std::integral_constant<bool, true>) [134]
+                0.00    0.00       1/2           std::_Any_data::_M_access() [75]
+                0.00    0.00       1/3           std::remove_reference<main::{lambda(double, double)#1}&>::type&& std::move<main::{lambda(double, double)#1}&>(std::remove_reference&&) [49]
+                0.00    0.00       1/1           operator new(unsigned long, void*) [173]
+-----------------------------------------------
+                0.00    0.00       1/1           std::function<double (double, double)>::function<main::{lambda(double, double)#1}, void, void>(main::{lambda(double, double)#1}) [152]
+[135]    0.0    0.00    0.00       1         bool std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_not_empty_function<{lambda(double, double)#1}>({lambda(double, double)#1} const&) [135]
+-----------------------------------------------
+                0.00    0.00       1/1           std::function<double (double, double)>::function<main::{lambda(double, double)#1}, void, void>(main::{lambda(double, double)#1}) [152]
+[136]    0.0    0.00    0.00       1         std::_Function_base::_Function_base() [136]
+-----------------------------------------------
+                0.00    0.00       1/1           std::function<double (double, double)>::~function() [153]
+[137]    0.0    0.00    0.00       1         std::_Function_base::~_Function_base() [137]
+                0.00    0.00       1/1           std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_manager(std::_Any_data&, std::_Function_base::_Base_manager<main::{lambda(double, double)#1}> const&, std::_Manager_operation) [132]
+-----------------------------------------------
+                0.00    0.00       1/1           std::enable_if<std::__and_<std::__and_<std::is_convertible<std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::pointer, Solver*>, std::__not_<std::is_array<ImplicitEuler> > >, std::is_assignable<std::default_delete<Solver>&, std::default_delete<ImplicitEuler>&&> >::value, std::unique_ptr<Solver, std::default_delete<Solver> >&>::type std::unique_ptr<Solver, std::default_delete<Solver> >::operator=<ImplicitEuler, std::default_delete<ImplicitEuler> >(std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >&&) [121]
+[138]    0.0    0.00    0.00       1         std::default_delete<Solver>::default_delete<ImplicitEuler, void>(std::default_delete<ImplicitEuler> const&) [138]
+-----------------------------------------------
+                0.00    0.00       1/1           std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::get_deleter() [115]
+[139]    0.0    0.00    0.00       1         std::__uniq_ptr_impl<ImplicitEuler, std::default_delete<ImplicitEuler> >::_M_deleter() [139]
+                0.00    0.00       1/1           std::tuple_element<1ul, std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> > >::type& std::get<1ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >(std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> >&) [166]
+-----------------------------------------------
+                0.00    0.00       1/1           std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::unique_ptr<std::default_delete<ImplicitEuler>, void>(ImplicitEuler*) [117]
+[140]    0.0    0.00    0.00       1         std::__uniq_ptr_impl<ImplicitEuler, std::default_delete<ImplicitEuler> >::__uniq_ptr_impl(ImplicitEuler*) [140]
+                0.00    0.00       1/1           std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> >::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler>, true>() [145]
+                0.00    0.00       1/3           std::__uniq_ptr_impl<ImplicitEuler, std::default_delete<ImplicitEuler> >::_M_ptr() [45]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<double, std::allocator<double> >::_S_max_size(std::allocator<double> const&) [146]
+[141]    0.0    0.00    0.00       1         std::allocator_traits<std::allocator<double> >::max_size(std::allocator<double> const&) [141]
+                0.00    0.00       1/3           __gnu_cxx::new_allocator<double>::max_size() const [37]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[142]    0.0    0.00    0.00       1         std::basic_string_view<char, std::char_traits<char> >::basic_string_view(char const*) [142]
+                0.00    0.00       1/1           std::char_traits<char>::length(char const*) [127]
+-----------------------------------------------
+                0.00    0.00       1/1           double* std::uninitialized_copy<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*) [161]
+[143]    0.0    0.00    0.00       1         double* std::__uninitialized_copy<true>::__uninit_copy<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*) [143]
+                0.00    0.00       1/1           double* std::copy<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*) [168]
+-----------------------------------------------
+                0.00    0.00       1/1           double* std::uninitialized_fill_n<double*, unsigned long, double>(double*, unsigned long, double const&) [162]
+[144]    0.0    0.00    0.00       1         double* std::__uninitialized_fill_n<true>::__uninit_fill_n<double*, unsigned long, double>(double*, unsigned long, double const&) [144]
+                0.00    0.00       1/1           double* std::fill_n<double*, unsigned long, double>(double*, unsigned long, double const&) [170]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__uniq_ptr_impl<ImplicitEuler, std::default_delete<ImplicitEuler> >::__uniq_ptr_impl(ImplicitEuler*) [140]
+[145]    0.0    0.00    0.00       1         std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> >::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler>, true>() [145]
+                0.00    0.00       1/1           std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >::_Tuple_impl() [123]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<double, std::allocator<double> >::_S_check_init_len(unsigned long, std::allocator<double> const&) [147]
+[146]    0.0    0.00    0.00       1         std::vector<double, std::allocator<double> >::_S_max_size(std::allocator<double> const&) [146]
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<double> >::max_size(std::allocator<double> const&) [141]
+                0.00    0.00       1/1           unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [167]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<double, std::allocator<double> >::vector(unsigned long, double const&, std::allocator<double> const&) [150]
+[147]    0.0    0.00    0.00       1         std::vector<double, std::allocator<double> >::_S_check_init_len(unsigned long, std::allocator<double> const&) [147]
+                0.00    0.00       1/1           std::vector<double, std::allocator<double> >::_S_max_size(std::allocator<double> const&) [146]
+                0.00    0.00       1/2           std::allocator<double>::allocator(std::allocator<double> const&) [59]
+                0.00    0.00       1/5           std::allocator<double>::~allocator() [30]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<double, std::allocator<double> >::vector(unsigned long, double const&, std::allocator<double> const&) [150]
+[148]    0.0    0.00    0.00       1         std::vector<double, std::allocator<double> >::_M_fill_initialize(unsigned long, double const&) [148]
+                0.00    0.00       1/6           std::_Vector_base<double, std::allocator<double> >::_M_get_Tp_allocator() [28]
+                0.00    0.00       1/1           double* std::__uninitialized_fill_n_a<double*, unsigned long, double, double>(double*, unsigned long, double const&, std::allocator<double>&) [164]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) [151]
+[149]    0.0    0.00    0.00       1         double* std::vector<double, std::allocator<double> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > >(unsigned long, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >) [149]
+                0.00    0.00       1/2           std::_Vector_base<double, std::allocator<double> >::_M_allocate(unsigned long) [67]
+                0.00    0.00       1/6           std::_Vector_base<double, std::allocator<double> >::_M_get_Tp_allocator() [28]
+                0.00    0.00       1/1           double* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*, double>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*, std::allocator<double>&) [163]
+-----------------------------------------------
+                0.00    0.00       1/1           Solver::initialise_solution() [99]
+[150]    0.0    0.00    0.00       1         std::vector<double, std::allocator<double> >::vector(unsigned long, double const&, std::allocator<double> const&) [150]
+                0.00    0.00       1/1           std::vector<double, std::allocator<double> >::_S_check_init_len(unsigned long, std::allocator<double> const&) [147]
+                0.00    0.00       1/1           std::_Vector_base<double, std::allocator<double> >::_Vector_base(unsigned long, std::allocator<double> const&) [130]
+                0.00    0.00       1/1           std::vector<double, std::allocator<double> >::_M_fill_initialize(unsigned long, double const&) [148]
+-----------------------------------------------
+                0.00    0.00       1/1           Solver::initialise_solution() [99]
+[151]    0.0    0.00    0.00       1         std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) [151]
+                0.00    0.00       1/1           __gnu_cxx::__alloc_traits<std::allocator<double>, double>::_S_propagate_on_copy_assign() [102]
+                0.00    0.00       1/3           std::vector<double, std::allocator<double> >::size() const [38]
+                0.00    0.00       1/1           std::vector<double, std::allocator<double> >::capacity() const [110]
+                0.00    0.00       1/1           std::vector<double, std::allocator<double> >::end() const [108]
+                0.00    0.00       1/1           std::vector<double, std::allocator<double> >::begin() const [109]
+                0.00    0.00       1/1           double* std::vector<double, std::allocator<double> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > >(unsigned long, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >) [149]
+                0.00    0.00       1/6           std::_Vector_base<double, std::allocator<double> >::_M_get_Tp_allocator() [28]
+                0.00    0.00       1/4           void std::_Destroy<double*, double>(double*, double*, std::allocator<double>&) [35]
+                0.00    0.00       1/4           std::_Vector_base<double, std::allocator<double> >::_M_deallocate(double*, unsigned long) [32]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[152]    0.0    0.00    0.00       1         std::function<double (double, double)>::function<main::{lambda(double, double)#1}, void, void>(main::{lambda(double, double)#1}) [152]
+                0.00    0.00       1/1           std::_Function_base::_Function_base() [136]
+                0.00    0.00       1/1           bool std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_not_empty_function<{lambda(double, double)#1}>({lambda(double, double)#1} const&) [135]
+                0.00    0.00       1/3           std::remove_reference<main::{lambda(double, double)#1}&>::type&& std::move<main::{lambda(double, double)#1}&>(std::remove_reference&&) [49]
+                0.00    0.00       1/1           std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_init_functor(std::_Any_data&, {lambda(double, double)#1}&&) [133]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[153]    0.0    0.00    0.00       1         std::function<double (double, double)>::~function() [153]
+                0.00    0.00       1/1           std::_Function_base::~_Function_base() [137]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_destroy(std::_Any_data&, std::integral_constant<bool, true>) [131]
+[154]    0.0    0.00    0.00       1         main::{lambda(double, double)#1}& std::_Any_data::_M_access<main::{lambda(double, double)#1}>() [154]
+                0.00    0.00       1/2           std::_Any_data::_M_access() [75]
+-----------------------------------------------
+                0.00    0.00       1/1           double* std::fill_n<double*, unsigned long, double>(double*, unsigned long, double const&) [170]
+[155]    0.0    0.00    0.00       1         __gnu_cxx::__enable_if<std::__is_scalar<double>::__value, double*>::__type std::__fill_n_a<double*, unsigned long, double>(double*, unsigned long, double const&) [155]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[156]    0.0    0.00    0.00       1         std::_MakeUniq<ImplicitEuler>::__single_object std::make_unique<ImplicitEuler, double&, double&, double&>(double&, double&, double&) [156]
+                0.00    0.00       3/3           double& std::forward<double&>(std::remove_reference<double&>::type&) [50]
+                0.00    0.00       1/1           ImplicitEuler::ImplicitEuler(double, double, double) [95]
+                0.00    0.00       1/1           std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::unique_ptr<std::default_delete<ImplicitEuler>, void>(ImplicitEuler*) [117]
+-----------------------------------------------
+                0.00    0.00       1/1           std::tuple_element<0ul, std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> > >::type const& std::get<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >(std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> > const&) [165]
+[157]    0.0    0.00    0.00       1         ImplicitEuler* const& std::__get_helper<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >(std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> > const&) [157]
+                0.00    0.00       1/1           std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >::_M_head(std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> > const&) [122]
+-----------------------------------------------
+                0.00    0.00       1/1           std::tuple_element<1ul, std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> > >::type& std::get<1ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >(std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> >&) [166]
+[158]    0.0    0.00    0.00       1         std::default_delete<ImplicitEuler>& std::__get_helper<1ul, std::default_delete<ImplicitEuler>>(std::_Tuple_impl<1ul, std::default_delete<ImplicitEuler>>&) [158]
+                0.00    0.00       1/1           std::_Tuple_impl<1ul, std::default_delete<ImplicitEuler> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<ImplicitEuler> >&) [124]
+-----------------------------------------------
+                0.00    0.00       1/1           double* std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*) [160]
+[159]    0.0    0.00    0.00       1         double* std::__copy_move_a<false, double const*, double*>(double const*, double const*, double*) [159]
+                0.00    0.00       1/1           double* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<double>(double const*, double const*, double*) [126]
+-----------------------------------------------
+                0.00    0.00       1/1           double* std::copy<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*) [168]
+[160]    0.0    0.00    0.00       1         double* std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*) [160]
+                0.00    0.00       2/2           double const* std::__niter_base<double const*, std::vector<double, std::allocator<double> > >(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >) [80]
+                0.00    0.00       1/2           double* std::__niter_base<double*>(double*) [81]
+                0.00    0.00       1/1           double* std::__copy_move_a<false, double const*, double*>(double const*, double const*, double*) [159]
+                0.00    0.00       1/2           double* std::__niter_wrap<double*>(double* const&, double*) [82]
+-----------------------------------------------
+                0.00    0.00       1/1           double* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*, double>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*, std::allocator<double>&) [163]
+[161]    0.0    0.00    0.00       1         double* std::uninitialized_copy<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*) [161]
+                0.00    0.00       1/1           double* std::__uninitialized_copy<true>::__uninit_copy<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*) [143]
+-----------------------------------------------
+                0.00    0.00       1/1           double* std::__uninitialized_fill_n_a<double*, unsigned long, double, double>(double*, unsigned long, double const&, std::allocator<double>&) [164]
+[162]    0.0    0.00    0.00       1         double* std::uninitialized_fill_n<double*, unsigned long, double>(double*, unsigned long, double const&) [162]
+                0.00    0.00       1/1           double* std::__uninitialized_fill_n<true>::__uninit_fill_n<double*, unsigned long, double>(double*, unsigned long, double const&) [144]
+-----------------------------------------------
+                0.00    0.00       1/1           double* std::vector<double, std::allocator<double> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > >(unsigned long, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >) [149]
+[163]    0.0    0.00    0.00       1         double* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*, double>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*, std::allocator<double>&) [163]
+                0.00    0.00       1/1           double* std::uninitialized_copy<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*) [161]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<double, std::allocator<double> >::_M_fill_initialize(unsigned long, double const&) [148]
+[164]    0.0    0.00    0.00       1         double* std::__uninitialized_fill_n_a<double*, unsigned long, double, double>(double*, unsigned long, double const&, std::allocator<double>&) [164]
+                0.00    0.00       1/1           double* std::uninitialized_fill_n<double*, unsigned long, double>(double*, unsigned long, double const&) [162]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__uniq_ptr_impl<ImplicitEuler, std::default_delete<ImplicitEuler> >::_M_ptr() const [105]
+[165]    0.0    0.00    0.00       1         std::tuple_element<0ul, std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> > >::type const& std::get<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >(std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> > const&) [165]
+                0.00    0.00       1/1           ImplicitEuler* const& std::__get_helper<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >(std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> > const&) [157]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__uniq_ptr_impl<ImplicitEuler, std::default_delete<ImplicitEuler> >::_M_deleter() [139]
+[166]    0.0    0.00    0.00       1         std::tuple_element<1ul, std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> > >::type& std::get<1ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >(std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> >&) [166]
+                0.00    0.00       1/1           std::default_delete<ImplicitEuler>& std::__get_helper<1ul, std::default_delete<ImplicitEuler>>(std::_Tuple_impl<1ul, std::default_delete<ImplicitEuler>>&) [158]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<double, std::allocator<double> >::_S_max_size(std::allocator<double> const&) [146]
+[167]    0.0    0.00    0.00       1         unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [167]
+-----------------------------------------------
+                0.00    0.00       1/1           double* std::__uninitialized_copy<true>::__uninit_copy<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*) [143]
+[168]    0.0    0.00    0.00       1         double* std::copy<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*) [168]
+                0.00    0.00       2/2           __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > std::__miter_base<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > >(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >) [79]
+                0.00    0.00       1/1           double* std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*) [160]
+-----------------------------------------------
+                0.00    0.00       1/1           std::unique_ptr<Solver, std::default_delete<Solver> >::reset(Solver*) [119]
+[169]    0.0    0.00    0.00       1         std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Solver*> >, std::is_move_constructible<Solver*>, std::is_move_assignable<Solver*> >::value, void>::type std::swap<Solver*>(Solver*&, Solver*&) [169]
+                0.00    0.00       3/4           std::remove_reference<Solver*&>::type&& std::move<Solver*&>(Solver*&) [33]
+-----------------------------------------------
+                0.00    0.00       1/1           double* std::__uninitialized_fill_n<true>::__uninit_fill_n<double*, unsigned long, double>(double*, unsigned long, double const&) [144]
+[170]    0.0    0.00    0.00       1         double* std::fill_n<double*, unsigned long, double>(double*, unsigned long, double const&) [170]
+                0.00    0.00       1/2           double* std::__niter_base<double*>(double*) [81]
+                0.00    0.00       1/1           __gnu_cxx::__enable_if<std::__is_scalar<double>::__value, double*>::__type std::__fill_n_a<double*, unsigned long, double>(double*, unsigned long, double const&) [155]
+                0.00    0.00       1/2           double* std::__niter_wrap<double*>(double* const&, double*) [82]
+-----------------------------------------------
+                0.00    0.00       1/1           std::enable_if<std::__and_<std::__and_<std::is_convertible<std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::pointer, Solver*>, std::__not_<std::is_array<ImplicitEuler> > >, std::is_assignable<std::default_delete<Solver>&, std::default_delete<ImplicitEuler>&&> >::value, std::unique_ptr<Solver, std::default_delete<Solver> >&>::type std::unique_ptr<Solver, std::default_delete<Solver> >::operator=<ImplicitEuler, std::default_delete<ImplicitEuler> >(std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >&&) [121]
+[171]    0.0    0.00    0.00       1         std::default_delete<ImplicitEuler>&& std::forward<std::default_delete<ImplicitEuler> >(std::remove_reference<std::default_delete<ImplicitEuler> >::type&) [171]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[172]    0.0    0.00    0.00       1         std::basic_ostream<char, std::char_traits<char> >& std::operator<< <char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, std::basic_string_view<char, std::char_traits<char> >) [172]
+                0.00    0.00       1/1           std::basic_string_view<char, std::char_traits<char> >::size() const [107]
+                0.00    0.00       1/1           std::basic_string_view<char, std::char_traits<char> >::data() const [106]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_init_functor(std::_Any_data&, {lambda(double, double)#1}&&, std::integral_constant<bool, true>) [134]
+[173]    0.0    0.00    0.00       1         operator new(unsigned long, void*) [173]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [86] _GLOBAL__sub_I__Z13error_squaredRKSt6vectorIdSaIdEES3_ [115] std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::get_deleter() [22] std::vector<double, std::allocator<double> >::end()
+  [87] _GLOBAL__sub_I__ZN13ExplicitEuler5solveERKSt8functionIFdddEE [116] std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::release() [23] std::vector<double, std::allocator<double> >::back()
+  [88] _GLOBAL__sub_I__ZN13ImplicitEuler5solveERKSt8functionIFdddEE [117] std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::unique_ptr<std::default_delete<ImplicitEuler>, void>(ImplicitEuler*) [150] std::vector<double, std::allocator<double> >::vector(unsigned long, double const&, std::allocator<double> const&)
+  [89] _GLOBAL__sub_I_main   [118] std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::~unique_ptr() [74] std::vector<double, std::allocator<double> >::vector()
+  [90] __static_initialization_and_destruction_0(int, int) [63] std::unique_ptr<Solver, std::default_delete<Solver> >::get_deleter() [46] std::vector<double, std::allocator<double> >::~vector()
+  [91] __static_initialization_and_destruction_0(int, int) [119] std::unique_ptr<Solver, std::default_delete<Solver> >::reset(Solver*) [151] std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&)
+  [92] __static_initialization_and_destruction_0(int, int) [120] std::unique_ptr<Solver, std::default_delete<Solver> >::~unique_ptr() [18] std::vector<double, std::allocator<double> >::operator[](unsigned long)
+  [93] __static_initialization_and_destruction_0(int, int) [121] std::enable_if<std::__and_<std::__and_<std::is_convertible<std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::pointer, Solver*>, std::__not_<std::is_array<ImplicitEuler> > >, std::is_assignable<std::default_delete<Solver>&, std::default_delete<ImplicitEuler>&&> >::value, std::unique_ptr<Solver, std::default_delete<Solver> >&>::type std::unique_ptr<Solver, std::default_delete<Solver> >::operator=<ImplicitEuler, std::default_delete<ImplicitEuler> >(std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >&&) [152] std::function<double (double, double)>::function<main::{lambda(double, double)#1}, void, void>(main::{lambda(double, double)#1})
+  [94] ImplicitEuler::solve(std::function<double (double, double)> const&) [122] std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >::_M_head(std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> > const&) [153] std::function<double (double, double)>::~function()
+  [25] ImplicitEuler::Newton(std::function<double (double, double)> const&, double, double, double) [41] std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >::_M_head(std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >&) [75] std::_Any_data::_M_access()
+  [95] ImplicitEuler::ImplicitEuler(double, double, double) [123] std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >::_Tuple_impl() [154] main::{lambda(double, double)#1}& std::_Any_data::_M_access<main::{lambda(double, double)#1}>()
+  [96] ImplicitEuler::~ImplicitEuler() [64] std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> >::_M_head(std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> > const&) [155] __gnu_cxx::__enable_if<std::__is_scalar<double>::__value, double*>::__type std::__fill_n_a<double*, unsigned long, double>(double*, unsigned long, double const&)
+  [97] ImplicitEuler::~ImplicitEuler() [65] std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> >::_M_head(std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> >&) [15] main::{lambda(double, double)#1} const* std::__addressof<main::{lambda(double, double)#1} const>(main::{lambda(double, double)#1} const&)
+  [98] Solver::print_solution() [124] std::_Tuple_impl<1ul, std::default_delete<ImplicitEuler> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<ImplicitEuler> >&) [156] std::_MakeUniq<ImplicitEuler>::__single_object std::make_unique<ImplicitEuler, double&, double&, double&>(double&, double&, double&)
+  [99] Solver::initialise_solution() [125] std::_Tuple_impl<1ul, std::default_delete<ImplicitEuler> >::_Tuple_impl() [157] ImplicitEuler* const& std::__get_helper<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >(std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> > const&)
+ [100] Solver::Solver(double, double, double) [66] std::_Tuple_impl<1ul, std::default_delete<Solver> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<Solver> >&) [47] ImplicitEuler*& std::__get_helper<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >(std::_Tuple_impl<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >&)
+ [101] Solver::~Solver()     [126] double* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<double>(double const*, double const*, double*) [76] Solver* const& std::__get_helper<0ul, Solver*, std::default_delete<Solver> >(std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> > const&)
+  [51] __gnu_cxx::new_allocator<double>::deallocate(double*, unsigned long) [127] std::char_traits<char>::length(char const*) [77] Solver*& std::__get_helper<0ul, Solver*, std::default_delete<Solver> >(std::_Tuple_impl<0ul, Solver*, std::default_delete<Solver> >&)
+  [52] __gnu_cxx::new_allocator<double>::allocate(unsigned long, void const*) [31] void std::_Destroy_aux<true>::__destroy<double*>(double*, double*) [158] std::default_delete<ImplicitEuler>& std::__get_helper<1ul, std::default_delete<ImplicitEuler>>(std::_Tuple_impl<1ul, std::default_delete<ImplicitEuler>>&)
+  [53] __gnu_cxx::new_allocator<double>::new_allocator(__gnu_cxx::new_allocator<double> const&) [67] std::_Vector_base<double, std::allocator<double> >::_M_allocate(unsigned long) [78] std::default_delete<Solver>& std::__get_helper<1ul, std::default_delete<Solver>>(std::_Tuple_impl<1ul, std::default_delete<Solver>>&)
+  [36] __gnu_cxx::new_allocator<double>::new_allocator() [128] std::_Vector_base<double, std::allocator<double> >::_Vector_impl::_Vector_impl(std::allocator<double> const&) [79] __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > std::__miter_base<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > >(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >)
+  [29] __gnu_cxx::new_allocator<double>::~new_allocator() [68] std::_Vector_base<double, std::allocator<double> >::_Vector_impl::_Vector_impl() [80] double const* std::__niter_base<double const*, std::vector<double, std::allocator<double> > >(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >)
+ [102] __gnu_cxx::__alloc_traits<std::allocator<double>, double>::_S_propagate_on_copy_assign() [42] std::_Vector_base<double, std::allocator<double> >::_Vector_impl::~_Vector_impl() [81] double* std::__niter_base<double*>(double*)
+  [54] __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >::__normal_iterator(double const* const&) [32] std::_Vector_base<double, std::allocator<double> >::_M_deallocate(double*, unsigned long) [82] double* std::__niter_wrap<double*>(double* const&, double*)
+  [17] __gnu_cxx::__normal_iterator<double*, std::vector<double, std::allocator<double> > >::__normal_iterator(double* const&) [129] std::_Vector_base<double, std::allocator<double> >::_M_create_storage(unsigned long) [159] double* std::__copy_move_a<false, double const*, double*>(double const*, double const*, double*)
+  [37] __gnu_cxx::new_allocator<double>::max_size() const [43] std::_Vector_base<double, std::allocator<double> >::_Vector_impl_data::_Vector_impl_data() [160] double* std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*)
+  [55] __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >::base() const [28] std::_Vector_base<double, std::allocator<double> >::_M_get_Tp_allocator() [161] double* std::uninitialized_copy<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*)
+  [20] __gnu_cxx::__normal_iterator<double*, std::vector<double, std::allocator<double> > >::operator*() const [130] std::_Vector_base<double, std::allocator<double> >::_Vector_base(unsigned long, std::allocator<double> const&) [162] double* std::uninitialized_fill_n<double*, unsigned long, double>(double*, unsigned long, double const&)
+  [21] __gnu_cxx::__normal_iterator<double*, std::vector<double, std::allocator<double> > >::operator-(long) const [69] std::_Vector_base<double, std::allocator<double> >::_Vector_base() [163] double* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*, double>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*, std::allocator<double>&)
+ [103] std::unique_ptr<ImplicitEuler, std::default_delete<ImplicitEuler> >::get() const [44] std::_Vector_base<double, std::allocator<double> >::~_Vector_base() [164] double* std::__uninitialized_fill_n_a<double*, unsigned long, double, double>(double*, unsigned long, double const&, std::allocator<double>&)
+  [56] std::unique_ptr<Solver, std::default_delete<Solver> >::get() const [131] std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_destroy(std::_Any_data&, std::integral_constant<bool, true>) [165] std::tuple_element<0ul, std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> > >::type const& std::get<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >(std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> > const&)
+  [57] std::unique_ptr<Solver, std::default_delete<Solver> >::operator->() const [132] std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_manager(std::_Any_data&, std::_Function_base::_Base_manager<main::{lambda(double, double)#1}> const&, std::_Manager_operation) [48] std::tuple_element<0ul, std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> > >::type& std::get<0ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >(std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> >&)
+   [9] std::_Function_base::_M_empty() const [13] std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_get_pointer(std::_Any_data const&) [83] std::tuple_element<0ul, std::tuple<Solver*, std::default_delete<Solver> > >::type const& std::get<0ul, Solver*, std::default_delete<Solver> >(std::tuple<Solver*, std::default_delete<Solver> > const&)
+ [104] std::default_delete<Solver>::operator()(Solver*) const [133] std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_init_functor(std::_Any_data&, {lambda(double, double)#1}&&) [84] std::tuple_element<0ul, std::tuple<Solver*, std::default_delete<Solver> > >::type& std::get<0ul, Solver*, std::default_delete<Solver> >(std::tuple<Solver*, std::default_delete<Solver> >&)
+ [105] std::__uniq_ptr_impl<ImplicitEuler, std::default_delete<ImplicitEuler> >::_M_ptr() const [134] std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_init_functor(std::_Any_data&, {lambda(double, double)#1}&&, std::integral_constant<bool, true>) [166] std::tuple_element<1ul, std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> > >::type& std::get<1ul, ImplicitEuler*, std::default_delete<ImplicitEuler> >(std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> >&)
+  [58] std::__uniq_ptr_impl<Solver, std::default_delete<Solver> >::_M_ptr() const [135] bool std::_Function_base::_Base_manager<main::{lambda(double, double)#1}>::_M_not_empty_function<{lambda(double, double)#1}>({lambda(double, double)#1} const&) [85] std::tuple_element<1ul, std::tuple<Solver*, std::default_delete<Solver> > >::type& std::get<1ul, Solver*, std::default_delete<Solver> >(std::tuple<Solver*, std::default_delete<Solver> >&)
+ [106] std::basic_string_view<char, std::char_traits<char> >::data() const [136] std::_Function_base::_Function_base() [167] unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)
+ [107] std::basic_string_view<char, std::char_traits<char> >::size() const [137] std::_Function_base::~_Function_base() [168] double* std::copy<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*)
+ [108] std::vector<double, std::allocator<double> >::end() const [138] std::default_delete<Solver>::default_delete<ImplicitEuler, void>(std::default_delete<ImplicitEuler> const&) [33] std::remove_reference<Solver*&>::type&& std::move<Solver*&>(Solver*&)
+  [38] std::vector<double, std::allocator<double> >::size() const [139] std::__uniq_ptr_impl<ImplicitEuler, std::default_delete<ImplicitEuler> >::_M_deleter() [49] std::remove_reference<main::{lambda(double, double)#1}&>::type&& std::move<main::{lambda(double, double)#1}&>(std::remove_reference&&)
+ [109] std::vector<double, std::allocator<double> >::begin() const [45] std::__uniq_ptr_impl<ImplicitEuler, std::default_delete<ImplicitEuler> >::_M_ptr() [169] std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Solver*> >, std::is_move_constructible<Solver*>, std::is_move_assignable<Solver*> >::value, void>::type std::swap<Solver*>(Solver*&, Solver*&)
+ [110] std::vector<double, std::allocator<double> >::capacity() const [140] std::__uniq_ptr_impl<ImplicitEuler, std::default_delete<ImplicitEuler> >::__uniq_ptr_impl(ImplicitEuler*) [26] std::isinf(double)
+  [10] std::function<double (double, double)>::operator()(double, double) const [70] std::__uniq_ptr_impl<Solver, std::default_delete<Solver> >::_M_deleter() [19] std::isnan(double)
+  [11] std::_Any_data::_M_access() const [71] std::__uniq_ptr_impl<Solver, std::default_delete<Solver> >::_M_ptr() [170] double* std::fill_n<double*, unsigned long, double>(double*, unsigned long, double const&)
+  [12] main::{lambda(double, double)#1} const& std::_Any_data::_M_access<main::{lambda(double, double)#1}>() const [72] std::allocator_traits<std::allocator<double> >::deallocate(std::allocator<double>&, double*, unsigned long) [50] double& std::forward<double&>(std::remove_reference<double&>::type&)
+  [59] std::allocator<double>::allocator(std::allocator<double> const&) [73] std::allocator_traits<std::allocator<double> >::allocate(std::allocator<double>&, unsigned long) [171] std::default_delete<ImplicitEuler>&& std::forward<std::default_delete<ImplicitEuler> >(std::remove_reference<std::default_delete<ImplicitEuler> >::type&)
+  [39] std::allocator<double>::allocator() [141] std::allocator_traits<std::allocator<double> >::max_size(std::allocator<double> const&) [8] double&& std::forward<double>(std::remove_reference<double>::type&)
+  [30] std::allocator<double>::~allocator() [14] std::_Function_handler<double (double, double), main::{lambda(double, double)#1}>::_M_invoke(std::_Any_data const&, double&&, std::_Any_data const&) [34] void std::_Destroy<double*>(double*, double*)
+ [111] std::_Head_base<0ul, ImplicitEuler*, false>::_M_head(std::_Head_base<0ul, ImplicitEuler*, false> const&) [142] std::basic_string_view<char, std::char_traits<char> >::basic_string_view(char const*) [35] void std::_Destroy<double*, double>(double*, double*, std::allocator<double>&)
+  [40] std::_Head_base<0ul, ImplicitEuler*, false>::_M_head(std::_Head_base<0ul, ImplicitEuler*, false>&) [143] double* std::__uninitialized_copy<true>::__uninit_copy<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*>(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, double*) [172] std::basic_ostream<char, std::char_traits<char> >& std::operator<< <char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, std::basic_string_view<char, std::char_traits<char> >)
+ [112] std::_Head_base<0ul, ImplicitEuler*, false>::_Head_base() [144] double* std::__uninitialized_fill_n<true>::__uninit_fill_n<double*, unsigned long, double>(double*, unsigned long, double const&) [16] main::{lambda(double, double)#1}::operator()(double, double) const
+  [60] std::_Head_base<0ul, Solver*, false>::_M_head(std::_Head_base<0ul, Solver*, false> const&) [145] std::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler> >::tuple<ImplicitEuler*, std::default_delete<ImplicitEuler>, true>() [24] ImplicitEuler::Newton(std::function<double (double, double)> const&, double, double, double)::{lambda(double, double, double, std::function<double (double, double)> const&)#2}::operator()(double, double, double, std::function<double (double, double)> const&) const
+  [61] std::_Head_base<0ul, Solver*, false>::_M_head(std::_Head_base<0ul, Solver*, false>&) [146] std::vector<double, std::allocator<double> >::_S_max_size(std::allocator<double> const&) [27] ImplicitEuler::Newton(std::function<double (double, double)> const&, double, double, double)::{lambda(double, double, double, double, std::function<double (double, double)> const&)#1}::operator()(double, double, double, double, std::function<double (double, double)> const&) const
+ [113] std::_Head_base<1ul, std::default_delete<ImplicitEuler>, true>::_M_head(std::_Head_base<1ul, std::default_delete<ImplicitEuler>, true>&) [147] std::vector<double, std::allocator<double> >::_S_check_init_len(unsigned long, std::allocator<double> const&) [173] operator new(unsigned long, void*)
+ [114] std::_Head_base<1ul, std::default_delete<ImplicitEuler>, true>::_Head_base() [148] std::vector<double, std::allocator<double> >::_M_fill_initialize(unsigned long, double const&)
+  [62] std::_Head_base<1ul, std::default_delete<Solver>, true>::_M_head(std::_Head_base<1ul, std::default_delete<Solver>, true>&) [149] double* std::vector<double, std::allocator<double> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > >(unsigned long, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >)
