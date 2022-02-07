@@ -17,4 +17,5 @@
  1. Before optimization: Explicit Euler Method: 0m3.511s. After optimiation: 0m2.511s
  2. Before optimization: Implicit Euler Method: 0m5.511s. After optimization: 0m3.684s
 
+ There was a slight improvement in the run-time when we updated the cmake compiler flag to -O3, so we kept that as our final version.
  As the implementation is fairly simple and for only one dimensional, there weren't any opportunities for auto-vectorization and significant improvements.
