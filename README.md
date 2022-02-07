@@ -33,11 +33,19 @@ make
 ```
 ./main
 ```
+To run the case you chose with time, run
+```
+time ./main
+```
  9. To view the solution file, open: `solution.txt` file in the same folder.
 
  10. To run the test cases, run command 
 ```
 ./solver-test
+```
+To run the test cases with time, run
+```
+time ./solver-test
 ```
 
  11. Run the command `make clean` in case you want to delete the executables and the object files.
