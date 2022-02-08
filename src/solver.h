@@ -24,9 +24,9 @@ class Solver
         void initialise_solution();
     protected:
         //std::array _solution;
-        double _y_0=0.0;
-        double _dt=0.0;
-        double _t_end=0;
+        double _y_0{0.0};
+        double _dt{0.0};
+        double _t_end{0.0};
         std::vector<double> _solution;
     public:
         Solver();
