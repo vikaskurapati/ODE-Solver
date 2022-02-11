@@ -4,6 +4,7 @@
 #include <fstream>
 #include <memory>
 #include <cmath>
+#include <string_view>
 
 const double pi = 3.1415;
 
@@ -26,7 +27,7 @@ int main()
     {
         while(getline(myfile, line))
         {
-            if(line_counter == 18)
+            if(line_counter == 19)
             {
                 std::cout << "The Gradient function used for this problem is \n";
                 std::cout << line << std::endl;
@@ -50,7 +51,7 @@ int main()
     std::cin >> time_step;
     std::cout << "Choose the Solver \n 1. ExplicitEuler \n 2. ImplicitEuler \n";
     std::cin >> choice;
-    std::string solvermethod;
+    std::string_view solvermethod;
 
     std::unique_ptr<Solver> euler;
 

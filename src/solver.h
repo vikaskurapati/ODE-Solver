@@ -12,8 +12,9 @@
 #include <iostream>
 #include <functional>
 #include <cassert>
+//#include <array>
 
-double error(const std::vector<double>&, const std::vector<double>&);
+double error_squared(const std::vector<double>&, const std::vector<double>&);
 
 enum SolverScheme{ EulerExplicit, EulerImplicit};
 
@@ -22,15 +23,16 @@ class Solver
     private:
         void initialise_solution();
     protected:
+        //std::array _solution;
+        double _y_0{0.0};
+        double _dt{0.0};
+        double _t_end{0.0};
         std::vector<double> _solution;
-        double _y_0=0.0;
-        double _dt=0.0;
-        double _t_end=0;
     public:
         Solver();
         Solver(double y_0, double dt, double t_end);
         void print_solution();
-        std::vector<double> get_solution();
+        inline std::vector<double> get_solution(){return _solution;};
         virtual void solve(const std::function<double(double, double)>& f) = 0;
         virtual ~Solver() = default;
 };

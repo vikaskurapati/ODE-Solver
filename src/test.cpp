@@ -38,8 +38,8 @@ TEST_CASE( "Explicit Euler is tested", "[ExplicitEuler]" ) {
     
     SECTION("Checking relative error norms")
     {
-        REQUIRE(error(solution1, anal1) < 0.001);
-        REQUIRE(error(solution2, anal2) < 0.001);
+        REQUIRE(error_squared(solution1, anal1) < 1e-6);
+        REQUIRE(error_squared(solution2, anal2) < 1e-6);
     }
 }
 
@@ -78,7 +78,7 @@ TEST_CASE( "Implicit Euler is tested", "[ImplicitEuler]" ) {
     
     SECTION("Checking relative error norms")
     {
-        REQUIRE(error(solution1, anal1) < 0.001);
-        REQUIRE(error(solution2, anal2) < 0.001);
+        REQUIRE(error_squared(solution1, anal1) < 1e-6);
+        REQUIRE(error_squared(solution2, anal2) < 1e-6);
     }
 }

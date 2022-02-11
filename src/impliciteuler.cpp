@@ -2,18 +2,6 @@
 #include <cmath>
 
 /**
-* Implicit Euler Constructor
-*
-* Constructs a solver instance based on the inputs and initializes the solution vector
-*
-* @param y_0, the initial value of the ODE problem, 
-* @param t_end the time until which the solver needs to solve, 
-* @param dt the timestep of the function
-*/
-ImplicitEuler::ImplicitEuler(double y_0, double dt, double t_end):Solver(y_0,dt,t_end)
-{}
-
-/**
 * Implicit Euler Solve function
 *
 * Solves the ODE and modifies the solution vector
@@ -61,7 +49,7 @@ double ImplicitEuler::Newton(const std::function<double(double, double)>& f, dou
     double ynext = 0.0;
     double ycurr = yn;
     auto G = [](double x, double t, double yn, double dt, const std::function<double(double, double)>& f){ return x - yn - dt*f(x,t);};
-    auto dG = [](double x, double t, double dt, const std::function<double(double, double)>& f){ return 1 - (1/0.01)*dt*(f(x + 0.01,t)- f(x,t));};
+    auto dG = [](double x, double t, double dt, const std::function<double(double, double)>& f){ return 1 - (100.0)*dt*(f(x + 0.01,t)- f(x,t));}; //Replaced 1/0.01 with 100.0 for faster performance
     while (tol > 1e-3 && iter < 100)
     {
         if(dG(ycurr, t, dt, f) == 0)
